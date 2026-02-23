@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Phase for Regeneration of Himatika (Efromatika)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Firebase SDK (compat) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <div class="flex min-h-screen">
+
+        <!-- Overlay Sidebar Mobile -->
+        <div id="sidebarOverlay" class="fixed inset-0 bg-black/40 hidden z-30 md:hidden" onclick="toggleSidebar()">
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside id="sidebar" class="fixed md:static z-40 w-64 bg-white shadow-md h-full
+                                   transform -translate-x-full md:translate-x-0
+                                   transition-transform duration-300 flex flex-col justify-between">
+
+            <div>
+                <div class="p-6 text-xl font-bold text-yellow-500">
+                    Efromatika
+                </div>
+
+                <nav class="px-4 space-y-2">
+                    <p class="text-xs text-gray-400 uppercase">Menu Utama</p>
+
+                    <button onclick="showPage('dashboard')" class="menu-btn w-full text-left px-4 py-3 rounded-lg bg-yellow-500 text-white transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        Informasi
+                    </button>
+
+                    <button onclick="showPage('jadwal-sharing')" class="menu-btn w-full text-left px-4 py-3 rounded-lg text-gray-600 transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        Jadwal Sharing
+                    </button>
+
+                    <button class="menu-btn w-full text-left px-4 py-3 rounded-lg text-gray-600 transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        Sharing Selesai
+                    </button>
+
+                    <button class="menu-btn w-full text-left px-4 py-3 rounded-lg text-gray-600 transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        Tugas
+                    </button>
+                </nav>
+            </div>
+
+            <div class="p-4">
+                <button id="signOutBtn"
+                    class="w-full border border-red-400 text-red-500 py-2 rounded-lg hover:bg-red-50">
+                    Sign Out
+                </button>
+            </div>
+        </aside>
+
+        <!-- LOGIN OVERLAY -->
+        <div id="loginPage" class="fixed inset-0 bg-gray-50 flex items-center justify-center z-50 hidden">
+            <div class="w-[90%] max-w-md bg-white rounded-2xl p-6 shadow-lg">
+                <h2 class="text-xl font-semibold mb-4">Masuk ke Efromatika</h2>
+                <div id="loginError" class="text-sm text-red-600 mb-2 hidden"></div>
+
+                <label class="text-sm font-medium">Email</label>
+                <input id="loginEmail" type="email" placeholder="email@contoh.com"
+                    class="w-full mt-1 p-3 border rounded-lg outline-none mb-3">
+
+                <label class="text-sm font-medium">Password</label>
+                <input id="loginPassword" type="password" placeholder="••••••••"
+                    class="w-full mt-1 p-3 border rounded-lg outline-none mb-4">
+
+                <button id="loginBtn"
+                    class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-700 transition">Masuk</button>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <main class="flex-1 p-4 sm:p-6 md:p-8 w-full">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+                <button class="md:hidden text-2xl transition transform duration-300 hover:scale-105 hover:shadow-xl" onclick="toggleSidebar()">☰</button>
+
+                <h1 id="pageTitle" class="text-2xl font-semibold">Informasi</h1>
+
+                <div class="flex items-center gap-3">
+                    <span id="userEmail" class="hidden sm:block text-gray-600">memuat...</span>
+                    <div class="w-9 h-9 bg-gray-300 rounded-full transition transform duration-300 hover:scale-105 hover:shadow-xl"></div>
+                </div>
+            </div>
+
+            <!-- DASHBOARD -->
+            <section id="dashboardPage">
+
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold mb-2">Informasi Umum</h2>
+                    <p class="text-gray-500">
+                        Berikut ringkasanmu. Selesaikan tugas tepat waktu dan jangan abaikan sharing!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <p class="text-gray-500 text-sm">Jadwal Sharing Hari Ini</p>
+                        <h3 class="text-3xl font-bold mt-2">0</h3>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <p class="text-gray-500 text-sm">Kating Diajak Sharing</p>
+                        <h3 class="text-3xl font-bold mt-2">0</h3>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <p class="text-gray-500 text-sm">Tugas Perlu Diselesaikan</p>
+                        <h3 class="text-3xl font-bold mt-2">5</h3>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <p class="text-gray-500 text-sm">Tugas Terselesaikan</p>
+                        <h3 class="text-3xl font-bold mt-2">12</h3>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- JADWAL SHARING -->
+            <section id="jadwalPage" class="hidden">
+
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold">Jadwal Sharing</h2>
+                    <p class="text-gray-500 mt-2">
+                        Jangan abaikan tugas sharing.
+                    </p>
+                </div>
+
+
+                <div id="sharingList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+
+                <!-- Floating Button -->
+                <button onclick="openModal()"
+                    class="fixed bottom-6 right-6 w-14 h-14 bg-yellow-500 text-white text-3xl rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition">+
+                </button>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- MODAL -->
+    <div id="overlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden
+              overflow-auto flex items-start sm:items-center justify-center z-50 p-4">
+
+        <div id="modal" class="bg-white w-[90%] max-w-md rounded-2xl p-6 transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh] overflow-y-auto">
+
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-semibold">Buat Jadwal Sharing</h2>
+                <button onclick="closeModal()">✕</button>
+            </div>
+
+            <div class="space-y-4">
+
+                <!-- Angkatan -->
+                <div>
+                    <label class="text-sm font-medium">Pilih Angkatan</label>
+                    <select id="angkatanSelect"
+                        class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-yellow-500 outline-none">
+                        <option value="">-- Pilih Angkatan --</option>
+                        <option value="2023">Angkatan 2023</option>
+                        <option value="2024">Angkatan 2024</option>
+                    </select>
+                </div>
+
+                <!-- Nama Kating -->
+                <div>
+                    <label class="text-sm font-medium">Pilih Kating</label>
+                    <select id="katingSelect"
+                        class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-yellow-500 outline-none">
+                        <option value="">-- Pilih Kating --</option>
+                    </select>
+                </div>
+
+                <button class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-700 transition">
+                    Tambah Kating
+                </button>
+
+                <!-- List Kating Terpilih -->
+                <div id="selectedList" class="space-y-2 max-h-40 overflow-y-auto"></div>
+
+                <!-- Waktu -->
+                <div>
+                    <label class="text-sm font-medium">Waktu Pelaksanaan</label>
+                    <input type="datetime-local"
+                        class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-yellow-500 outline-none">
+                </div>
+
+                <!-- Tempat -->
+                <div>
+                    <label class="text-sm font-medium">Tempat</label>
+                    <input type="text" placeholder="Ex: Kantin Fakultas / Zoom"
+                        class="w-full mt-1 p-3 border rounded-lg focus:ring-2 focus:ring-yellow-500 outline-none">
+                </div>
+
+                <div class="flex justify-end">
+                    <button class="bg-yellow-500 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 transition">
+                        Simpan Jadwal
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
