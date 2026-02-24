@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Phase for Regeneration of Himatika (Efromatika)</title>
+    <title>Education Phase for Regeneration of Himatika (Efromatika) Itera</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="logo.png" type="image/png">
     <!-- Firebase SDK (compat) -->
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
@@ -41,7 +42,7 @@
                         Jadwal Sharing
                     </button>
 
-                    <button class="menu-btn w-full text-left px-4 py-3 rounded-lg text-gray-600 transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <button onclick="showPage('completed')" class="menu-btn w-full text-left px-4 py-3 rounded-lg text-gray-600 transition transform duration-300 hover:scale-105 hover:shadow-xl">
                         Sharing Selesai
                     </button>
 
@@ -106,23 +107,23 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                     <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <p class="text-gray-500 text-sm">Jadwal Sharing Hari Ini</p>
-                        <h3 class="text-3xl font-bold mt-2">0</h3>
+                        <p class="text-gray-500 text-sm">Jadwal Sharing-mu</p>
+                        <h3 id="countUpcoming" class="text-3xl font-bold mt-2">NaN</h3>
                     </div>
 
                     <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <p class="text-gray-500 text-sm">Kating Diajak Sharing</p>
-                        <h3 class="text-3xl font-bold mt-2">0</h3>
+                        <p class="text-gray-500 text-sm">Sharing Terselesaikan</p>
+                        <h3 id="countCompleted" class="text-3xl font-bold mt-2">NaN</h3>
                     </div>
 
                     <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
                         <p class="text-gray-500 text-sm">Tugas Perlu Diselesaikan</p>
-                        <h3 class="text-3xl font-bold mt-2">5</h3>
+                        <h3 class="text-3xl font-bold mt-2">NaN</h3>
                     </div>
 
                     <div class="bg-white p-5 rounded-xl shadow transition transform duration-300 hover:scale-105 hover:shadow-xl">
                         <p class="text-gray-500 text-sm">Tugas Terselesaikan</p>
-                        <h3 class="text-3xl font-bold mt-2">12</h3>
+                        <h3 class="text-3xl font-bold mt-2">NaN</h3>
                     </div>
 
                 </div>
@@ -145,6 +146,18 @@
                 <button onclick="openModal()"
                     class="fixed bottom-6 right-6 w-14 h-14 bg-yellow-500 text-white text-3xl rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition">+
                 </button>
+
+            </section>
+
+            <!-- COMPLETED SHARING -->
+            <section id="completedPage" class="hidden">
+
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold">Sharing Selesai</h2>
+                    <p class="text-gray-500 mt-2">Jadwal sharing yang telah selesai.</p>
+                </div>
+
+                <div id="completedList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
 
             </section>
 
