@@ -79,21 +79,25 @@ const name25 = {
     'felecia.083': "FELECIA LIDWINA BR SINAGA",
     "panglimatempur": "ADMIN"
 };
+
 const katingData = {
     2023: ["LENY PUSPITA NINGRUM", "SAFITRI DWI UTARI", "ROLASNI ROHAIDA BR SIDABUTAR", "ANISHA RAHMADANI SUWANDI", "RANI TIARA DEWI", "SILVI AGUSTIANI", "ANANDA HIDAYAH PURNAMA", "ELSA AMALIA", "JOVITA RIDIANA PUTRI", "DIAZTI ANY DWI HERLAMBANG", "SABELA BUDI UTAMI", "FITRIANA SEMBIRING", "SISKA VALENTINA", "AMILIA FATIMAH NURAINI", "FEBRI YURITA SARI", "ARTIVA NOVA", "RANI SYIFA RAHIMARAHMAN", "DESTI PUJI ASTUTI", "OKTAVIA NURVITA DARMAYANTI", "IMA PARRONA SIMANJUNTAK", "LAURA SISKA AMANDA", "EMILIZA OKTAVIA RAMADANI", "FITRIA DWI ANGGRAINI", "LARAS AYU PRIYADI", "PUTRI RATNA SARI", "TIANESA MARCHELLINE PAKPAHAN", "FEBRIANTI AMELIA PUTRI", "DIAN MONALISA NAINGGOLAN", "GLORIA MISCHELIN ROTHUA SEPTIANI", "DAVINA SALSABILLA", "JIHAN FADHIA PUTRI HAMIDI", "GIZKA FADHILA HUSNI", "AISAH MULYA NINGRUM", "JOY PATIARMA SITUMORANG", "ESTER AULIA SIDABUTAR", "SHEFIRA LELI HASANAH", "NAYLA NURUL AISYAH", "AMELIA OKTAVIANI", "NURMA WIDIA SAPUTRI", "CRISTIANI ANJELINA PURBA", "CITRA PURBA", "MUKHLISHAH FITHAAH", "JELITA ANASTASHA SIDABUTAR", "THALIA SASI KIRANA DEWI", "ANGELINE CHRISTY ARUAN", "SASI KIRANA ZAHRANI", "RIDHO ELYEZER SIHOMBING", "WINDA SUHARTINI AZAHRA", "ARIEL SITUMORANG", "ANGGI RENATA BR. BARUS"],
     2024: ["Muatiara Sabrina", "Izdhihara Afifah", "Amelia Sugesti", "Martina Tri Mikha", "Rizky Ayu Rahmawati", "Juan Leonard Nathaniel Pello", "Theresia Siallagan", "Nazwa Reza Fahlevi", "Salsa Adhiningtias", "Anastasya Aie Sabrina", "Fevbry Allenda Putri", "Annisa Rahmawati", "Destri Cencya Purba", "Novia Clara Sinaga", "Fasih Fadillah", "Silvia Dwiyanti", "Luthfia Aida", "Gabriella Agnes Sonia Sinaga", "Boy Sihotang", "Lidia Rahel Saragih", "Kesya Adelina Simamora", "Aniela Lepana Putri", "Adinda Dwi Novitasari", "Evan Fabiano Resdiyanto", "Amelia Putri", "Pola Dwita Mariahni Sinaga", "Daniel Manurung", "Ainun Mardiah", "Fabrizio Fazar Sinaga", "Dian Paramita", "Benediktus Christiano Sihaan", "Daffa Ihsan Naufal", "Putri Adelia", "Perimsa S. Pandia", "Annisa Soleha Nurjannah", "Indah Puspita Rini", "Shintia Ronauli Simanjuntak", "Asyita Pratiwi", "Dea Abelia Saskia Putri", "Daniel Yohanre Kevin Pasaribu", "Isnaini Az-Zahra", "Fiqy Haziz Ibrahim", "Fitriana", "Winda Sartika Lumbantoruan", "Ropaska Adri Naibaho", "Daniel Manurung", "Annisa Dwi Rahmani", "Widya Tri Wulandari", "Difa Dirgo Dirgantoro", "Mutiara Pardosi", "Aulia Kartika", "Porman Sihombing", "Ezy Saputra Pardosi", "Angelia Saragih", "Dea Puspita", "Astri Pratiwi Margareta", "Fazri Togatorop", "Herviana Octavia Rahma Dani", "M. Daffa Deaz Pratama"]
 };
+
 const adminList = ["panglimatempur"];
 function isAdmin() {
     if (!currentUser) return false;
     const username = currentUser.email.split("@")[0];
     return adminList.includes(username);
 }
+
 const linkApps = "https://script.google.com/macros/s/AKfycbxDNN9SVgWpCd0Vlne9kEdf5dBedwPTlSazO1GKsCBjTI9rsNUwRabUW3zXhO1Dd2FC/exec"
 const db = firebase.firestore();
 let currentUser = null;
 let inactivityTimer = null;
 let selectedKatings = [];
+
 document.addEventListener("DOMContentLoaded", () => {
     initAuth();
     const angkatanSelect = document.getElementById("angkatanSelect");
@@ -111,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.getElementById("signOutBtn")?.addEventListener("click", () => firebase.auth().signOut());
 });
+
 function initAuth() {
     firebase.auth().onAuthStateChanged(user => {
         if (user) {
@@ -129,6 +134,7 @@ function initAuth() {
     });
     document.getElementById("btnLogin")?.addEventListener("click", handleLogin);
 }
+
 async function handleLogin() {
     const email = document.getElementById("loginEmail").value.trim();
     const password = document.getElementById("loginPassword").value;
@@ -141,6 +147,7 @@ async function handleLogin() {
         errorEl.classList.remove("hidden");
     }
 }
+
 function resetInactivityTimer() {
     if (inactivityTimer) clearTimeout(inactivityTimer);
     inactivityTimer = setTimeout(() => {
@@ -150,32 +157,36 @@ function resetInactivityTimer() {
         }
     }, 300000); 
 }
+
 function startActivityListeners() {
     ["mousemove", "keydown", "click", "touchstart"].forEach(e =>
         document.addEventListener(e, resetInactivityTimer)
     );
 }
+
 function stopActivityListeners() {
     ["mousemove", "keydown", "click", "touchstart"].forEach(e =>
         document.removeEventListener(e, resetInactivityTimer)
     );
     if (inactivityTimer) clearTimeout(inactivityTimer);
 }
+
 function showApp(user) {
     document.getElementById("loginPage").classList.add("hidden");
     const username = user.email.split("@")[0];
     document.getElementById("userEmail").textContent = name25[username] || user.email;
     startActivityListeners();
     resetInactivityTimer();
-    loadProfileOnStart(user);
     if (isAdmin()) {
         document.getElementById("menuReview")?.classList.remove("hidden");
         listenReview()
     }
 }
+
 function showLogin() {
     document.getElementById("loginPage").classList.remove("hidden");
 }
+
 function showPage(pageId) {
     const pages = ["dashboardPage", "jadwalPage", "completedPage", "reviewPage"];
     pages.forEach(p => {
@@ -211,10 +222,12 @@ function showPage(pageId) {
         toggleSidebar();
     }
 }
+
 function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle("-translate-x-full");
     document.getElementById("sidebarOverlay").classList.toggle("hidden");
 }
+
 function openModal() {
     const overlay = document.getElementById("overlay");
     const modal = document.getElementById("modal");
@@ -224,11 +237,13 @@ function openModal() {
         modal.classList.add("scale-100", "opacity-100");
     }, 10);
 }
+
 function closeModal() {
     const modal = document.getElementById("modal");
     modal.classList.add("scale-95", "opacity-0");
     setTimeout(() => document.getElementById("overlay").classList.add("hidden"), 300);
 }
+
 function handleAngkatanChange() {
     const angkatan = document.getElementById("angkatanSelect").value;
     const katingSelect = document.getElementById("katingSelect");
@@ -244,6 +259,7 @@ function handleAngkatanChange() {
         }
     });
 }
+
 function addKating() {
     const katingSelect = document.getElementById("katingSelect");
     const val = katingSelect.value;
@@ -253,11 +269,13 @@ function addKating() {
     renderSelected();
     handleAngkatanChange(); 
 }
+
 function removeKating(index) {
     selectedKatings.splice(index, 1);
     renderSelected();
     handleAngkatanChange(); 
 }
+
 function renderSelected() {
     const listEl = document.getElementById("selectedList");
     listEl.innerHTML = "";
@@ -268,6 +286,7 @@ function renderSelected() {
         listEl.appendChild(item);
     });
 }
+
 function listenSharing() {
     db.collection("schedules").orderBy("date", "asc").onSnapshot(snap => {
         const listEl = document.getElementById("sharingList");
@@ -287,26 +306,69 @@ function listenSharing() {
         document.getElementById("countUpcoming").innerText = myCount;
     });
 }
+
 function listenCompleted() {
     db.collection("completedSchedules")
-        .orderBy("finalizedAt", "desc")
+        .orderBy("approvedAt", "desc") // Perbaikan: Ubah finalizedAt menjadi approvedAt
         .onSnapshot((snap) => {
             const container = document.getElementById("completedList");
             const countEl = document.getElementById("countCompleted"); 
             if (!container) return;
+            
             container.innerHTML = "";
-            if (countEl) {
-                countEl.innerText = snap.size; 
-            }
-            if (snap.empty) {
-                container.innerHTML = "<p class='text-gray-500 italic'>Belum ada sharing yang diselesaikan.</p>";
-                return;
-            }
+            let myCompletedCount = 0;
+
             snap.forEach((doc) => {
-                renderCompletedCard(container, doc.id, doc.data());
+                const data = doc.data();
+                const isParticipant = data.participants && data.participants.includes(currentUser.email);
+                
+                // Tampilkan hanya jika user adalah admin ATAU terdaftar sebagai participant
+                if (isAdmin() || isParticipant) {
+                    myCompletedCount++;
+                    renderCompletedCard(container, doc.id, data);
+                }
             });
+
+            // Update counter angka di Dashboard
+            if (countEl) {
+                countEl.innerText = myCompletedCount; 
+            }
+
+            // Pesan jika kosong
+            if (myCompletedCount === 0) {
+                container.innerHTML = "<p class='text-gray-500 italic'>Belum ada sharing yang diselesaikan untukmu.</p>";
+            }
         });
 }
+
+function renderCompletedCard(container, id, data) {
+    const card = document.createElement("div");
+    card.className = "bg-white p-5 rounded-xl shadow border-l-4 border-green-500 opacity-90 hover:opacity-100 transition";
+    
+    // Perbaikan: Gunakan approvedAt sesuai yang dikirim dari adminAction
+    const finishDate = data.approvedAt ? new Date(data.approvedAt.seconds * 1000).toLocaleDateString('id-ID') : '-';
+    
+    card.innerHTML = `
+        <div class="flex justify-between items-start mb-2">
+            <div>
+                <h3 class="font-bold text-gray-700">${data.judul || 'Sharing Selesai'}</h3>
+                <p class="text-xs text-gray-500">Pembuat: ${data.creatorName}</p>
+            </div>
+            <span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold">SUCCESS</span>
+        </div>
+        <div class="text-xs text-gray-600 space-y-1 mb-4">
+            <p>📍 ${data.tempat}</p>
+            <p>📅 ${data.date}</p>
+            <p class="text-[10px] text-gray-400 mt-2">Disetujui pada: ${finishDate}</p>
+        </div>
+        <a href="${data.proofUrl}" target="_blank" 
+           class="block text-center py-2 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-gray-200 transition">
+           📄 Lihat Bukti Sharing
+        </a>
+    `;
+    container.appendChild(card);
+}
+
 async function saveSharing() {
     const angkatan = document.getElementById("angkatanSelect").value;
     const dateTime = document.querySelector("input[type='datetime-local']").value;
@@ -335,30 +397,7 @@ async function saveSharing() {
         alert("Gagal simpan: " + err.message);
     }
 }
-function renderCompletedCard(container, id, data) {
-    const card = document.createElement("div");
-    card.className = "bg-white p-5 rounded-xl shadow border-l-4 border-green-500 opacity-90 hover:opacity-100 transition";
-    const finishDate = data.finalizedAt ? new Date(data.finalizedAt.seconds * 1000).toLocaleDateString('id-ID') : '-';
-    card.innerHTML = `
-        <div class="flex justify-between items-start mb-2">
-            <div>
-                <h3 class="font-bold text-gray-700">${data.judul || 'Sharing Selesai'}</h3>
-                <p class="text-xs text-gray-500">Pembuat: ${data.creatorName}</p>
-            </div>
-            <span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold">SUCCESS</span>
-        </div>
-        <div class="text-xs text-gray-600 space-y-1 mb-4">
-            <p>📍 ${data.tempat}</p>
-            <p>📅 ${data.date}</p>
-            <p class="text-[10px] text-gray-400 mt-2">Disetujui pada: ${finishDate}</p>
-        </div>
-        <a href="${data.proofUrl}" target="_blank" 
-           class="block text-center py-2 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-gray-200 transition">
-           📄 Lihat Bukti Sharing
-        </a>
-    `;
-    container.appendChild(card);
-}
+
 function renderCard(container, id, data, isCompleted) {
     const card = document.createElement("div");
     card.className = "bg-white p-5 rounded-xl shadow-md space-y-3 border-l-4 border-yellow-500 transition transform hover:shadow-lg transition transform duration-300 hover:scale-105 hover:shadow-xl";
@@ -407,6 +446,7 @@ function renderCard(container, id, data, isCompleted) {
     `;
     container.appendChild(card);
 }
+
 async function joinSharing(id) {
     const ref = db.collection("schedules").doc(id);
     const doc = await ref.get();
@@ -415,24 +455,29 @@ async function joinSharing(id) {
         participants: firebase.firestore.FieldValue.arrayUnion(currentUser.email)
     });
 }
+
 async function batalJoin(id) {
     await db.collection("schedules").doc(id).update({
         participants: firebase.firestore.FieldValue.arrayRemove(currentUser.email)
     });
 }
+
 async function deleteSharing(id) {
     if (confirm("Hapus jadwal ini?")) {
         await db.collection("schedules").doc(id).delete();
     }
 }
+
 function completeSharing(id) {
     document.getElementById("pendingScheduleId").value = id;
     document.getElementById("proofOverlay").classList.remove("hidden");
 }
+
 function closeProofModal() {
     document.getElementById("proofOverlay").classList.add("hidden");
     document.getElementById("proofFile").value = "";
 }
+
 async function submitProofToReview() {
     const fileInput = document.getElementById("proofFile");
     const scheduleId = document.getElementById("pendingScheduleId").value;
@@ -479,6 +524,7 @@ async function submitProofToReview() {
     };
     reader.readAsDataURL(file);
 }
+
 function listenReview() {
     console.log("Test")
     if (!isAdmin()) return;
@@ -509,6 +555,7 @@ function listenReview() {
         });
     });
 }
+
 async function adminAction(id, action) {
     const ref = db.collection("reviewSchedules").doc(id);
     const snap = await ref.get();
@@ -530,6 +577,7 @@ async function adminAction(id, action) {
     }
     await ref.delete();
 }
+
 async function copyData(id) {
     const ref = id.includes('complete') ? db.collection("completedSchedules") : db.collection("schedules");
     const doc = await db.collection("schedules").doc(id).get();
@@ -537,6 +585,7 @@ async function copyData(id) {
     const teks = `Sharing Efromatika\nKating: ${data.kating.join(", ")}\nWaktu: ${data.date} ${data.time}\nTempat: ${data.tempat}`;
     navigator.clipboard.writeText(teks).then(() => alert("Disalin!"));
 }
+
 async function openProfileModal() {
     if (!currentUser) return;
     document.getElementById("profileOverlay").classList.remove("hidden");
@@ -546,15 +595,11 @@ async function openProfileModal() {
     document.getElementById("p-nim").innerText = "125160" + username.split(".")[1];
     document.getElementById("p-angkatan").innerText = 2025;
 }
+
 function closeProfileModal() {
     document.getElementById("profileOverlay").classList.add("hidden");
 }
-async function loadProfileOnStart(user) {
-    const userDoc = await db.collection("users").doc(user.uid).get();
-    if (userDoc.exists && userDoc.data().photoURL) {
-        updateProfileUI(userDoc.data().photoURL);
-    }
-}
+
 window.showPage = showPage;
 window.toggleSidebar = toggleSidebar;
 window.openModal = openModal;
