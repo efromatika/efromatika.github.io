@@ -507,7 +507,7 @@ async function submitProofToReview() {
             const data = scheduleDoc.data();
             await db.collection("reviewSchedules").doc(scheduleId).set({
                 ...data,
-                proofUrl: "https:
+                proofUrl: "https://drive.google.com/drive/folders/1rgcEQHDwgIwHWchGa6vPqSH0FmGD1KlM?usp=sharing"
                 submittedAt: firebase.firestore.FieldValue.serverTimestamp(),
                 status: "pending_review"
             });
