@@ -33,6 +33,10 @@
 
                 <nav class="px-4 space-y-2">
                     <p class="text-xs text-gray-400 uppercase">Menu Utama</p>
+                    
+                    <button id="menuReview" onclick="showPage('review')" class="hidden menu-btn w-full text-left px-4 py-3 rounded-lg text-gray-600 transition transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <span>📋</span> Peninjauan (Admin)
+                    </button>
 
                     <button onclick="showPage('dashboard')" class="menu-btn w-full text-left px-4 py-3 rounded-lg bg-yellow-500 text-white transition transform duration-300 hover:scale-105 hover:shadow-xl">
                         Dashboard
@@ -74,7 +78,7 @@
                 <input id="loginPassword" type="password" placeholder="••••••••"
                     class="w-full mt-1 p-3 border rounded-lg outline-none mb-4">
 
-                <button id="loginBtn"
+                <button id="btnLogin"
                     class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-700 transition">Masuk</button>
             </div>
         </div>
@@ -90,7 +94,10 @@
 
                 <div class="flex items-center gap-3">
                     <span id="userEmail" class="hidden sm:block text-gray-600">memuat...</span>
-                    <div class="w-9 h-9 bg-gray-300 rounded-full transition transform duration-300 hover:scale-105 hover:shadow-xl"></div>
+                    <div id="profileTrigger" onclick="openProfileModal()" 
+                        class="w-9 h-9 bg-gray-300 rounded-full cursor-pointer overflow-hidden transition transform hover:scale-105 border border-gray-200">
+                        <img id="profileCircleImg" src="" class="w-full h-full object-cover hidden">
+                    </div>
                 </div>
             </div>
 
@@ -131,22 +138,17 @@
 
             <!-- JADWAL SHARING -->
             <section id="jadwalPage" class="hidden">
-
                 <div class="mb-8">
                     <h2 class="text-3xl font-bold">Jadwal Sharing</h2>
                     <p class="text-gray-500 mt-2">
                         Jangan abaikan tugas sharing.
                     </p>
                 </div>
-
-
                 <div id="sharingList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-
                 <!-- Floating Button -->
                 <button onclick="openModal()"
                     class="fixed bottom-6 right-6 w-14 h-14 bg-yellow-500 text-white text-3xl rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition">+
                 </button>
-
             </section>
 
             <!-- COMPLETED SHARING -->
@@ -159,6 +161,17 @@
 
                 <div id="completedList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
 
+            </section>
+
+            <!-- REVIEW SHARING -->
+            <section id="reviewPage" class="hidden">
+
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold">Kelola Sharing</h2>
+                    <p class="text-gray-500 mt-2">Anda adalah admin, silakan kelola sharing yang tersedia.</p>
+                </div>
+
+                <div id="reviewList" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
             </section>
 
         </main>
@@ -229,9 +242,61 @@
         </div>
     </div>
 
+    <div id="profileOverlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-center justify-center z-[60] p-4">
+        <div class="bg-white w-full max-w-sm rounded-2xl p-6 shadow-xl">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Profil Saya</h2>
+                <button onclick="closeProfileModal()" class="text-gray-400 hover:text-gray-600">✕</button>
+            </div>
+
+            <div class="flex flex-col items-center mb-6">
+                <div class="relative group">
+                    <div class="w-24 h-24 bg-gray-200 rounded-full overflow-hidden border-4 border-yellow-500 shadow-lg">
+                        <img id="modalProfileImg" src="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <label class="text-xs font-semibold text-gray-500 uppercase">Nama Lengkap</label>
+                    <p id="p-nama" class="font-medium border-b pb-1">-</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs font-semibold text-gray-500 uppercase">NIM</label>
+                        <p id="p-nim" class="font-medium border-b pb-1">-</p>
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold text-gray-500 uppercase">Angkatan</label>
+                        <p id="p-angkatan" class="font-medium border-b pb-1">-</p>
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs font-semibold text-gray-500 uppercase">Email</label>
+                    <p id="p-email" class="font-medium border-b pb-1">-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="proofOverlay" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden flex items-center justify-center z-[70] p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+        <h2 class="text-xl font-bold mb-4">Upload Bukti Sharing</h2>
+        <p class="text-sm text-gray-500 mb-4">Unggah foto/screenshot bukti sharing untuk ditinjau admin.</p>
+        
+        <input type="file" id="proofFile" accept="image/*" class="w-full mb-4 p-2 border rounded-lg">
+        <input type="hidden" id="pendingScheduleId">
+
+        <div class="flex justify-end gap-2">
+            <button onclick="closeProofModal()" class="px-4 py-2 text-gray-500">Batal</button>
+            <button id="btnSubmitProof" onclick="submitProofToReview()" class="px-4 py-2 bg-green-500 text-white rounded-lg">Kirim Bukti</button>
+        </div>
+    </div>
+    </div>
+
     <script src="firebase-config.js"></script>
     <script src="script.js"></script>
 
 </body>
-<!-- test -->
 </html>
