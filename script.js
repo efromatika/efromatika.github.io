@@ -1,1 +1,740 @@
-const name25={'khayla.001':'KHAYLA\x20AZIZAH\x20RAHMAN',"\u0064\u0065\u006c\u006c\u0061\u002e\u0030\u0030\u0032":'DELLA\x20AULIA\x20NUR\x20SAFITRI',"\u0072\u006f\u0073\u0073\u0061\u002e\u0030\u0030\u0033":'ROSSA\x20INOVA\x20DA\x20SILVA','salsa.004':'SALSA\x20TIARA\x20SEPRIANI',"\u006d\u0069\u006c\u0068\u0061\u006d\u002e\u0030\u0030\u0035":'M.\x20ILHAM\x20AL\x20FAJRI',"\u0076\u0065\u0072\u0061\u002e\u0030\u0030\u0036":'VERA\x20DWI\x20APRILIA',"\u0066\u0061\u0075\u007a\u0069\u0061\u0068\u002e\u0030\u0030\u0037":'FAUZIAH\x20AULIA\x20FADILA','kaysa.008':'KAYSA\x20JULIETA\x20PUSPITA',"\u0073\u0065\u0070\u0069\u0061\u002e\u0030\u0030\u0039":'SEPIA\x20ANGGUN\x20SAPUTRI','anabel.010':'ANABEL\x20NOVELINA\x20MANURUNG','ririn.011':'RIRIN\x20MARCELINA\x20MANURUNG','sopia.012':'SOPIA\x20PAKPAHAN',"\u0074\u0068\u0065\u0073\u0073\u0061\u002e\u0030\u0031\u0033":'THESSA\x20MINARIA\x20LUMBAN\x20SIANTAR',"\u0064\u0061\u006d\u0061\u0072\u002e\u0030\u0031\u0034":'DAMAR\x20SAPUTRA','rendi.015':'RENDI\x20ARIANTO\x20SIHOTANG','naila.016':'NAILA\x20KHUSI\x20ALIF\x20VIA',"\u0073\u0065\u006c\u0076\u0069\u0061\u002e\u0030\u0031\u0037":'SELVIA\x20TIA\x20IVANKA',"\u0061\u006c\u0064\u0069\u002e\u0030\u0031\u0038":'ALDI\x20EKO\x20PURNAMA',"\u0072\u0061\u006d\u0061\u002e\u0030\u0031\u0039":'RAMA\x20ADITIYA',"\u0073\u0061\u0062\u0069\u006c\u0061\u002e\u0030\u0032\u0030":'SABILA\x20ALLISYA\x20PUTRI',"\u0073\u0075\u006c\u0074\u0061\u006e\u002e\u0030\u0032\u0031":'SULTAN\x20RAHMAN\x20HADI','laura.022':'LAURA\x20NIVOLIN',"\u0072\u0069\u006b\u0061\u002e\u0030\u0032\u0033":'RIKA\x20RAHAYU',"\u0068\u0061\u006e\u0069\u002e\u0030\u0032\u0034":'HANI\x20SAFIRA\x20BELA','suci.025':'SUCI\x20NAYLA\x20SYIFA',"\u0061\u006c\u0069\u0066\u0069\u0061\u002e\u0030\u0032\u0036":'ALIFIA\x20INDAH\x20PRATIWI','nora.027':'NORA\x20JESICA\x20SEPTIANI\x20SIMATUPANG',"\u0061\u006c\u0064\u006f\u002e\u0030\u0032\u0038":'ALDO\x20FEBRIANSYAH',"\u0072\u0074\u0064\u0065\u0077\u0069\u002e\u0030\u0032\u0039":'RT.DEWI\x20LAILATUL\x20UMANIYYAH','nurul.030':'NURUL\x20FITRIYANI',"\u006d\u0069\u0079\u0061\u002e\u0030\u0033\u0031":'MIYA\x20ARINI\x20DAMANIK',"\u0062\u0069\u006d\u0061\u002e\u0030\u0033\u0032":'BIMA\x20ALANDIKA',"\u0063\u006c\u0061\u0072\u0069\u0073\u0074\u0061\u002e\u0030\u0033\u0033":'CLARISTA\x20CHRISTY',"\u006f\u006c\u0064\u0061\u002e\u0030\u0033\u0034":'OLDA\x20EYUNIKE\x20SIAHAAN',"\u0067\u0065\u0062\u0069\u002e\u0030\u0033\u0035":'GEBI\x20MASRIDA\x20NABABAN',"\u006a\u006f\u0073\u0075\u0061\u002e\u0030\u0033\u0036":'JOSUA\x20FRANSISCO\x20SITUMEANG','grace.037':'GRACE\x20THEODORA\x20NATALINA\x20MANURUNG','dhea.038':'DHEA\x20AMELIA',"\u006a\u0075\u006c\u0069\u0075\u0073\u002e\u0030\u0033\u0039":'JULIUS\x20SIMAMORA',"\u0066\u0061\u007a\u006c\u0075\u0072\u002e\u0030\u0034\u0030":'FAZLUR\x20YAZID','hilarius.041':'HILARIUS\x20JANNOELTA\x20TARIGAN\x20GIRSANG','yuly.042':'YULY\x20FLOWER\x20SIREGAR',"\u0070\u0072\u0069\u0073\u0063\u0069\u006c\u006c\u0061\u002e\u0030\u0034\u0033":'PRISCILLA\x20SYALOMITA\x20GINTING',"\u0073\u0079\u0061\u0068\u0069\u0072\u0061\u002e\u0030\u0034\u0034":'SYAHIRA\x20LULU\x20RAMADHANI','khoirunnisaa.045':'KHOIRUNNISAA\x20GHASSANI\x20PUTRI',"\u0061\u007a\u0077\u0061\u002e\u0030\u0034\u0036":'AZWA\x20ARDIYANTI\x20AMDIAH','bintang.047':'BINTANG\x20XERREND\x20VERIXA','aldi.048':'ALDI\x20KURNIAWAN',"\u0061\u0072\u0069\u006e\u0064\u0079\u0061\u002e\u0030\u0034\u0039":'ARINDYA\x20SALSABILA\x20AYU','fara.050':'FARA\x20DWI\x20YUSDITA','zatmiaty.051':'ZATMIATY',"\u006c\u0061\u0075\u0072\u0065\u006e\u002e\u0030\u0035\u0032":'LAUREN\x20AULIA\x20RAMONA','grace.053':'GRACE\x20RADOTIMA\x20SIMANJUNTAK',"\u006d\u0061\u007a\u006d\u0075\u0072\u002e\u0030\u0035\u0034":'MAZMUR\x20SILAEN','yodha.055':'YODHA\x20IDMONIA\x20RAZAN','putri.056':'PUTRI\x20LESTARI',"\u007a\u0065\u0066\u0066\u0061\u006e\u0079\u0061\u002e\u0030\u0035\u0037":'ZEFFANYA\x20MEIDIANTHA\x20SURBAKTI',"\u0073\u0065\u006c\u0073\u0079\u0061\u006e\u0061\u002e\u0030\u0035\u0038":'SELSYANA\x20DAMANIK',"\u0068\u0065\u0073\u0074\u0069\u002e\u0030\u0035\u0039":'HESTI\x20SAKINATUN','joyanti.060':'JOYANTI\x20GULTOM',"\u0072\u0061\u0063\u0068\u0065\u006c\u002e\u0030\u0036\u0031":'RACHEL\x20OLANDA\x20ELIZABETH\x20SITINJAK',"\u0064\u0065\u0073\u0079\u0061\u002e\u0030\u0036\u0032":'DESYA\x20CANTIKA\x20ANGGRAINI',"\u006e\u0061\u0079\u006c\u0061\u002e\u0030\u0036\u0033":'NAYLA\x20NUR\x20AZIZAH',"\u0077\u0061\u0068\u0079\u0075\u002e\u0030\u0036\u0034":'WAHYU\x20AKBAR\x20FAJARI','tiara.065':'TIARA\x20SINAGA','sinky.066':'SINKY\x20DWI\x20SARI\x20TAMSAR','uli.067':'ULI\x20MUSLIHAH',"\u006d\u0061\u0072\u0077\u0061\u002e\u0030\u0036\u0038":'MARWA\x20NADYA\x20HASANAH',"\u0065\u0075\u006b\u0068\u0061\u0072\u0069\u0073\u0074\u0069\u006f\u002e\u0030\u0036\u0039":'EUKHARISTIO\x20CAESATRIA\x20WIJAYA\x20TAMPUBOLON',"\u006d\u0072\u0069\u0066\u0071\u0069\u002e\u0030\u0037\u0030":'M.\x20RIFQI\x20SAIFULLAH',"\u0077\u0075\u006c\u0061\u006e\u002e\u0030\u0037\u0031":'WULAN\x20PANCAWATI',"\u0073\u0069\u006c\u0076\u0061\u002e\u0030\u0037\u0032":'SILVA\x20NOVITASARI','ana.073':'ANA\x20ESTIANI','herty.074':'HERTY\x20ROMAITO\x20HABEAHAN','aura.075':'AURA\x20RAHMA\x20AZKYA\x20PUTRI','nurmala.076':'NURMALA\x20SAFITRI',"\u0065\u006c\u0069\u0073\u0061\u002e\u0030\u0037\u0037":'ELISA\x20ANGGRAINI','yuko.078':'YUKO\x20GERARD\x20EDRA\x20PANJAITAN',"\u0072\u0061\u006d\u0061\u0073\u0061\u0072\u0069\u002e\u0030\u0037\u0039":'RAMASARI\x20HASIBUAN','riza.080':'RIZA\x20TRIANDINI','mrasya.081':'M.\x20RASYA\x20AGUSTIAN',"\u0076\u0069\u007a\u006b\u0061\u002e\u0030\u0038\u0032":'VIZKA\x20AKDITYA','felecia.083':'FELECIA\x20LIDWINA\x20BR\x20SINAGA'};function toggleSidebar(){document['getElementById']("\u0073\u0069\u0064\u0065\u0062\u0061\u0072")["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0074\u006f\u0067\u0067\u006c\u0065"]("\u002d\u0074\u0072\u0061\u006e\u0073\u006c\u0061\u0074\u0065\u002d\u0078\u002d\u0066\u0075\u006c\u006c");document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0073\u0069\u0064\u0065\u0062\u0061\u0072\u004f\u0076\u0065\u0072\u006c\u0061\u0079")['classList']["\u0074\u006f\u0067\u0067\u006c\u0065"]("neddih".split("").reverse().join(""));}function showPage(_0x12300d){document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0064\u0061\u0073\u0068\u0062\u006f\u0061\u0072\u0064\u0050\u0061\u0067\u0065")["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]['add']("\u0068\u0069\u0064\u0064\u0065\u006e");document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("egaPlawdaj".split("").reverse().join(""))['classList']["\u0061\u0064\u0064"]("\u0068\u0069\u0064\u0064\u0065\u006e");document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0063\u006f\u006d\u0070\u006c\u0065\u0074\u0065\u0064\u0050\u0061\u0067\u0065")?.["tsiLssalc".split("").reverse().join("")]["\u0061\u0064\u0064"]("\u0068\u0069\u0064\u0064\u0065\u006e");document['querySelectorAll']("\u002e\u006d\u0065\u006e\u0075\u002d\u0062\u0074\u006e")['forEach'](_0x3fe3c1=>{_0x3fe3c1["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("\u0062\u0067\u002d\u0079\u0065\u006c\u006c\u006f\u0077\u002d\u0035\u0030\u0030","\u0074\u0065\u0078\u0074\u002d\u0077\u0068\u0069\u0074\u0065");_0x3fe3c1['classList']["\u0061\u0064\u0064"]("006-yarg-txet".split("").reverse().join(""));});if(_0x12300d==="\u0064\u0061\u0073\u0068\u0062\u006f\u0061\u0072\u0064"){document['getElementById']("\u0064\u0061\u0073\u0068\u0062\u006f\u0061\u0072\u0064\u0050\u0061\u0067\u0065")["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("\u0068\u0069\u0064\u0064\u0065\u006e");document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0070\u0061\u0067\u0065\u0054\u0069\u0074\u006c\u0065")["\u0069\u006e\u006e\u0065\u0072\u0054\u0065\u0078\u0074"]="\u0044\u0061\u0073\u0068\u0062\u006f\u0061\u0072\u0064";document['querySelectorAll']("ntb-unem.".split("").reverse().join(""))[0xa974b^0xa974b]['classList']['add']("005-wolley-gb".split("").reverse().join(""),"etihw-txet".split("").reverse().join(""));}else if(_0x12300d==="detelpmoc".split("").reverse().join("")){document['getElementById']("egaPdetelpmoc".split("").reverse().join(""))["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]['remove']("neddih".split("").reverse().join(""));document['getElementById']("\u0070\u0061\u0067\u0065\u0054\u0069\u0074\u006c\u0065")["\u0069\u006e\u006e\u0065\u0072\u0054\u0065\u0078\u0074"]='Sharing\x20Selesai';document["\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006c\u0065\u0063\u0074\u006f\u0072\u0041\u006c\u006c"]("\u002e\u006d\u0065\u006e\u0075\u002d\u0062\u0074\u006e")[0x8daec^0x8daee]['classList']["\u0061\u0064\u0064"]("\u0062\u0067\u002d\u0079\u0065\u006c\u006c\u006f\u0077\u002d\u0035\u0030\u0030","\u0074\u0065\u0078\u0074\u002d\u0077\u0068\u0069\u0074\u0065");}else{document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u006a\u0061\u0064\u0077\u0061\u006c\u0050\u0061\u0067\u0065")["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]['remove']("neddih".split("").reverse().join(""));document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0070\u0061\u0067\u0065\u0054\u0069\u0074\u006c\u0065")["\u0069\u006e\u006e\u0065\u0072\u0054\u0065\u0078\u0074"]='Jadwal\x20Sharing';document["\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006c\u0065\u0063\u0074\u006f\u0072\u0041\u006c\u006c"]("\u002e\u006d\u0065\u006e\u0075\u002d\u0062\u0074\u006e")[0x92092^0x92093]["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]['add']("\u0062\u0067\u002d\u0079\u0065\u006c\u006c\u006f\u0077\u002d\u0035\u0030\u0030","\u0074\u0065\u0078\u0074\u002d\u0077\u0068\u0069\u0074\u0065");}}const overlay=document['getElementById']("\u006f\u0076\u0065\u0072\u006c\u0061\u0079");const modal=document['getElementById']("\u006d\u006f\u0064\u0061\u006c");function openModal(){overlay["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("\u0068\u0069\u0064\u0064\u0065\u006e");setTimeout(()=>{modal["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("59-elacs".split("").reverse().join(""),"0-yticapo".split("").reverse().join(""));modal['classList']["\u0061\u0064\u0064"]("001-elacs".split("").reverse().join(""),"\u006f\u0070\u0061\u0063\u0069\u0074\u0079\u002d\u0031\u0030\u0030");},0x9a62e^0x9a624);}function closeModal(){modal["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0061\u0064\u0064"]("\u0073\u0063\u0061\u006c\u0065\u002d\u0039\u0035","\u006f\u0070\u0061\u0063\u0069\u0074\u0079\u002d\u0030");modal['classList']['remove']("\u0073\u0063\u0061\u006c\u0065\u002d\u0031\u0030\u0030","\u006f\u0070\u0061\u0063\u0069\u0074\u0079\u002d\u0031\u0030\u0030");setTimeout(()=>overlay['classList']["\u0061\u0064\u0064"]("\u0068\u0069\u0064\u0064\u0065\u006e"),0x98f5f^0x98e73);}overlay["\u0061\u0064\u0064\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"]("kcilc".split("").reverse().join(""),function(_0x5d3b64){if(_0x5d3b64['target']===overlay)closeModal();});const INACTIVITY_LIMIT=(0xa67f3^0xa67f6)*(0x20ee8^0x20ed4)*(0x1a0ba^0x1a352);let inactivityTimer=null;let currentUser=null;function resetInactivityTimer(){if(inactivityTimer)clearTimeout(inactivityTimer);inactivityTimer=setTimeout(()=>{if(currentUser){firebase["\u0061\u0075\u0074\u0068"]()["\u0073\u0069\u0067\u006e\u004f\u0075\u0074"]();alert('Anda\x20otomatis\x20logout\x20karena\x20tidak\x20aktif\x20selama\x205\x20menit.');}},INACTIVITY_LIMIT);}function onUserActivity(){if(!currentUser)return;resetInactivityTimer();}function startActivityListeners(){["\u006d\u006f\u0075\u0073\u0065\u006d\u006f\u0076\u0065","nwodyek".split("").reverse().join(""),"kcilc".split("").reverse().join(""),"\u0074\u006f\u0075\u0063\u0068\u0073\u0074\u0061\u0072\u0074"]["\u0066\u006f\u0072\u0045\u0061\u0063\u0068"](_0x32ac9a=>document["\u0061\u0064\u0064\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"](_0x32ac9a,onUserActivity));}function stopActivityListeners(){["\u006d\u006f\u0075\u0073\u0065\u006d\u006f\u0076\u0065","\u006b\u0065\u0079\u0064\u006f\u0077\u006e","kcilc".split("").reverse().join(""),"\u0074\u006f\u0075\u0063\u0068\u0073\u0074\u0061\u0072\u0074"]['forEach'](_0x510cff=>document["\u0072\u0065\u006d\u006f\u0076\u0065\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"](_0x510cff,onUserActivity));if(inactivityTimer)clearTimeout(inactivityTimer);}function showLogin(){document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("egaPnigol".split("").reverse().join(""))['classList']['remove']("neddih".split("").reverse().join(""));updateDashboardCounts(0xe8f5c^0xe8f5c,0x7bf23^0x7bf23);}function showApp(_0xbdb47c){currentUser=_0xbdb47c;document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("egaPnigol".split("").reverse().join(""))["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0061\u0064\u0064"]("\u0068\u0069\u0064\u0064\u0065\u006e");const _0x5e113b=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0075\u0073\u0065\u0072\u0045\u006d\u0061\u0069\u006c");_0x5e113b['textContent']=name25[_0xbdb47c["\u0065\u006d\u0061\u0069\u006c"]["\u0073\u0070\u006c\u0069\u0074"]("\u0040")[0x8ba04^0x8ba04]];resetInactivityTimer();startActivityListeners();refreshDashboardCounts();}async function refreshDashboardCounts(){if(!currentUser)return;const _0x29113d=currentUser["\u0065\u006d\u0061\u0069\u006c"];try{const _0x2a06fc=await db['collection']("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")["\u0067\u0065\u0074"]();const _0x21990e=_0x2a06fc['docs']['filter'](_0x393566=>Array['isArray'](_0x393566["\u0064\u0061\u0074\u0061"]()["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"])&&_0x393566["\u0064\u0061\u0074\u0061"]()["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"](_0x29113d))['length'];updateDashboardCounts(_0x21990e,null);const _0x3f6aac=await db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("seludehcSdetelpmoc".split("").reverse().join(""))["\u0067\u0065\u0074"]();const _0x36941a=_0x3f6aac["\u0064\u006f\u0063\u0073"]['filter'](_0x52f088=>Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x52f088["\u0064\u0061\u0074\u0061"]()['participants'])&&_0x52f088["\u0064\u0061\u0074\u0061"]()['participants']["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"](_0x29113d))['length'];updateDashboardCounts(null,_0x36941a);}catch(_0x5b57df){console["\u0065\u0072\u0072\u006f\u0072"]('refreshDashboardCounts\x20error',_0x5b57df);}}function initAuth(){if(typeof firebase==="\u0075\u006e\u0064\u0065\u0066\u0069\u006e\u0065\u0064"||!firebase['auth']){console['error']('Firebase\x20Auth\x20not\x20available.\x20Make\x20sure\x20SDK\x20and\x20firebase-config.js\x20are\x20loaded.');return;}firebase["\u0061\u0075\u0074\u0068"]()["\u006f\u006e\u0041\u0075\u0074\u0068\u0053\u0074\u0061\u0074\u0065\u0043\u0068\u0061\u006e\u0067\u0065\u0064"](_0x12321a=>{if(_0x12321a){showApp(_0x12321a);}else{currentUser=null;stopActivityListeners();showLogin();}});const _0x3d718b=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("ntBnigol".split("").reverse().join(""));if(_0x3d718b)_0x3d718b['addEventListener']("kcilc".split("").reverse().join(""),async()=>{const _0x11269c=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u006c\u006f\u0067\u0069\u006e\u0045\u006d\u0061\u0069\u006c")['value']['trim']();const _0x160659=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("drowssaPnigol".split("").reverse().join(""))['value'];const _0x48fee8=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("rorrEnigol".split("").reverse().join(""));if(_0x48fee8){_0x48fee8["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0061\u0064\u0064"]("neddih".split("").reverse().join(""));_0x48fee8["\u0074\u0065\u0078\u0074\u0043\u006f\u006e\u0074\u0065\u006e\u0074"]='';}if(!_0x11269c||!_0x160659){if(_0x48fee8){_0x48fee8["\u0074\u0065\u0078\u0074\u0043\u006f\u006e\u0074\u0065\u006e\u0074"]='Email\x20dan\x20password\x20harus\x20diisi.';_0x48fee8["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("\u0068\u0069\u0064\u0064\u0065\u006e");}return;}try{await firebase["\u0061\u0075\u0074\u0068"]()["\u0073\u0069\u0067\u006e\u0049\u006e\u0057\u0069\u0074\u0068\u0045\u006d\u0061\u0069\u006c\u0041\u006e\u0064\u0050\u0061\u0073\u0073\u0077\u006f\u0072\u0064"](_0x11269c,_0x160659);}catch(_0x410609){console["\u0065\u0072\u0072\u006f\u0072"]('Login\x20error',_0x410609);if(_0x48fee8){_0x48fee8["\u0074\u0065\u0078\u0074\u0043\u006f\u006e\u0074\u0065\u006e\u0074"]=_0x410609["\u006d\u0065\u0073\u0073\u0061\u0067\u0065"]||'Gagal\x20login';_0x48fee8["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("\u0068\u0069\u0064\u0064\u0065\u006e");}}});const _0x387391=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0073\u0069\u0067\u006e\u004f\u0075\u0074\u0042\u0074\u006e");if(_0x387391)_0x387391['addEventListener']("\u0063\u006c\u0069\u0063\u006b",()=>firebase['auth']()["\u0073\u0069\u0067\u006e\u004f\u0075\u0074"]());}function updateThemeIcon(){const _0x4285bf=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0074\u0068\u0065\u006d\u0065\u0054\u006f\u0067\u0067\u006c\u0065");if(!_0x4285bf)return;if(document["\u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074"]['classList']["\u0063\u006f\u006e\u0074\u0061\u0069\u006e\u0073"]("krad".split("").reverse().join(""))){_0x4285bf['textContent']="\u1f31e";_0x4285bf["\u0074\u0069\u0074\u006c\u0065"]='Switch\x20to\x20light\x20mode';}else{_0x4285bf["\u0074\u0065\u0078\u0074\u0043\u006f\u006e\u0074\u0065\u006e\u0074"]="\uDF19\uD83C".split("").reverse().join("");_0x4285bf["\u0074\u0069\u0074\u006c\u0065"]='Switch\x20to\x20dark\x20mode';}}function initTheme(){const _0x151c98=localStorage["\u0067\u0065\u0074\u0049\u0074\u0065\u006d"]("\u0074\u0068\u0065\u006d\u0065");if(_0x151c98==="\u0064\u0061\u0072\u006b"||!_0x151c98&&window["\u006d\u0061\u0074\u0063\u0068\u004d\u0065\u0064\u0069\u0061"]('(prefers-color-scheme:\x20dark)')['matches']){document['documentElement']["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]['add']("\u0064\u0061\u0072\u006b");}else{document["\u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074"]["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0072\u0065\u006d\u006f\u0076\u0065"]("\u0064\u0061\u0072\u006b");}updateThemeIcon();}function toggleTheme(){if(document["\u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074"]['classList']['contains']("krad".split("").reverse().join(""))){document["\u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074"]['classList']['remove']("krad".split("").reverse().join(""));localStorage['setItem']("\u0074\u0068\u0065\u006d\u0065","\u006c\u0069\u0067\u0068\u0074");}else{document['documentElement']["\u0063\u006c\u0061\u0073\u0073\u004c\u0069\u0073\u0074"]["\u0061\u0064\u0064"]("krad".split("").reverse().join(""));localStorage["\u0073\u0065\u0074\u0049\u0074\u0065\u006d"]("emeht".split("").reverse().join(""),"krad".split("").reverse().join(""));}updateThemeIcon();}document["\u0061\u0064\u0064\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"]("\u0044\u004f\u004d\u0043\u006f\u006e\u0074\u0065\u006e\u0074\u004c\u006f\u0061\u0064\u0065\u0064",()=>{initTheme();const _0x56257c=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0074\u0068\u0065\u006d\u0065\u0054\u006f\u0067\u0067\u006c\u0065");if(_0x56257c)_0x56257c["\u0061\u0064\u0064\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"]("kcilc".split("").reverse().join(""),toggleTheme);initAuth();});const katingData={0x7e7:['LENY\x20PUSPITA\x20NINGRUM','SAFITRI\x20DWI\x20UTARI','ROLASNI\x20ROHAIDA\x20BR\x20SIDABUTAR','ANISHA\x20RAHMADANI\x20SUWANDI','RANI\x20TIARA\x20DEWI','SILVI\x20AGUSTIANI','ANANDA\x20HIDAYAH\x20PURNAMA','ELSA\x20AMALIA','JOVITA\x20RIDIANA\x20PUTRI','DIAZTI\x20ANY\x20DWI\x20HERLAMBANG','SABELA\x20BUDI\x20UTAMI','FITRIANA\x20SEMBIRING','SISKA\x20VALENTINA','AMILIA\x20FATIMAH\x20NURAINI','FEBRI\x20YURITA\x20SARI','ARTIVA\x20NOVA','RANI\x20SYIFA\x20RAHIMARAHMAN','DESTI\x20PUJI\x20ASTUTI','OKTAVIA\x20NURVITA\x20DARMAYANTI','IMA\x20PARRONA\x20SIMANJUNTAK','LAURA\x20SISKA\x20AMANDA','EMILIZA\x20OKTAVIA\x20RAMADANI','FITRIA\x20DWI\x20ANGGRAINI','LARAS\x20AYU\x20PRIYADI','PUTRI\x20RATNA\x20SARI','TIANESA\x20MARCHELLINE\x20PAKPAHAN','FEBRIANTI\x20AMELIA\x20PUTRI','DIAN\x20MONALISA\x20NAINGGOLAN','GLORIA\x20MISCHELIN\x20ROTHUA\x20SEPTIANI','DAVINA\x20SALSABILLA','JIHAN\x20FADHIA\x20PUTRI\x20HAMIDI','GIZKA\x20FADHILA\x20HUSNI','AISAH\x20MULYA\x20NINGRUM','JOY\x20PATIARMA\x20SITUMORANG','ESTER\x20AULIA\x20SIDABUTAR','SHEFIRA\x20LELI\x20HASANAH','NAYLA\x20NURUL\x20AISYAH','AMELIA\x20OKTAVIANI','NURMA\x20WIDIA\x20SAPUTRI','CRISTIANI\x20ANJELINA\x20PURBA','CITRA\x20PURBA','MUKHLISHAH\x20FITHAAH','JELITA\x20ANASTASHA\x20SIDABUTAR','THALIA\x20SASI\x20KIRANA\x20DEWI','ANGELINE\x20CHRISTY\x20ARUAN','SASI\x20KIRANA\x20ZAHRANI','RIDHO\x20ELYEZER\x20SIHOMBING','WINDA\x20SUHARTINI\x20AZAHRA','ARIEL\x20SITUMORANG','ANGGI\x20RENATA\x20BR.\x20BARUS'],0x7e8:['Muatiara\x20Sabrina','Izdhihara\x20Afifah','Amelia\x20Sugesti','Martina\x20Tri\x20Mikha','Rizky\x20Ayu\x20Rahmawati','Juan\x20Leonard\x20Nathaniel\x20Pello','Theresia\x20Siallagan','Nazwa\x20Reza\x20Fahlevi','Salsa\x20Adhiningtias','Anastasya\x20Aie\x20Sabrina','Fevbry\x20Allenda\x20Putri','Annisa\x20Rahmawati','Destri\x20Cencya\x20Purba','Novia\x20Clara\x20Sinaga','Fasih\x20Fadillah','Silvia\x20Dwiyanti','Luthfia\x20Aida','Gabriella\x20Agnes\x20Sonia\x20Sinaga','Boy\x20Sihotang','Lidia\x20Rahel\x20Saragih','Kesya\x20Adelina\x20Simamora','Aniela\x20Lepana\x20Putri','Adinda\x20Dwi\x20Novitasari','Evan\x20Fabiano\x20Resdiyanto','Amelia\x20Putri','Pola\x20Dwita\x20Mariahni\x20Sinaga','Daniel\x20Manurung','Ainun\x20Mardiah','Fabrizio\x20Fazar\x20Sinaga','Dian\x20Paramita','Benediktus\x20Christiano\x20Sihaan','Daffa\x20Ihsan\x20Naufal','Putri\x20Adelia','Perimsa\x20S.\x20Pandia','Annisa\x20Soleha\x20Nurjannah','Indah\x20Puspita\x20Rini','Shintia\x20Ronauli\x20Simanjuntak','Asyita\x20Pratiwi','Dea\x20Abelia\x20Saskia\x20Putri','Daniel\x20Yohanre\x20Kevin\x20Pasaribu','Isnaini\x20Az-Zahra','Fiqy\x20Haziz\x20Ibrahim',"\u0046\u0069\u0074\u0072\u0069\u0061\u006e\u0061",'Winda\x20Sartika\x20Lumbantoruan','Ropaska\x20Adri\x20Naibaho','Daniel\x20Manurung','Annisa\x20Dwi\x20Rahmani','Widya\x20Tri\x20Wulandari','Difa\x20Dirgo\x20Dirgantoro','Mutiara\x20Pardosi','Aulia\x20Kartika','Porman\x20Sihombing','Ezy\x20Saputra\x20Pardosi','Angelia\x20Saragih','Dea\x20Puspita','Astri\x20Pratiwi\x20Margareta','Fazri\x20Togatorop','Herviana\x20Octavia\x20Rahma\x20Dani','M.\x20Daffa\x20Deaz\x20Pratama']};let selectedKatings=[];const maxKating=0x5e061^0x5e065;const angkatanSelect=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("tceleSnatakgna".split("").reverse().join(""));const katingSelect=document['getElementById']("tceleSgnitak".split("").reverse().join(""));const selectedList=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0073\u0065\u006c\u0065\u0063\u0074\u0065\u0064\u004c\u0069\u0073\u0074");if(angkatanSelect){angkatanSelect['addEventListener']("egnahc".split("").reverse().join(""),function(){const _0x5a4780=this["\u0076\u0061\u006c\u0075\u0065"];if(!katingSelect)return;katingSelect['innerHTML']='<option\x20value=\x22\x22>--\x20Pilih\x20Kating\x20--</option>';if(!_0x5a4780)return;(katingData[_0x5a4780]||[])["\u0066\u0069\u006c\u0074\u0065\u0072"](_0x49a094=>!selectedKatings['includes'](_0x49a094))['forEach'](_0x5ca55c=>{const _0x4a9d33=document['createElement']("\u006f\u0070\u0074\u0069\u006f\u006e");_0x4a9d33["\u0076\u0061\u006c\u0075\u0065"]=_0x5ca55c;_0x4a9d33["\u0074\u0065\u0078\u0074\u0043\u006f\u006e\u0074\u0065\u006e\u0074"]=_0x5ca55c;katingSelect["\u0061\u0070\u0070\u0065\u006e\u0064\u0043\u0068\u0069\u006c\u0064"](_0x4a9d33);});});}function addKating(){if(!katingSelect)return;const _0x40e9b3=katingSelect['value'];if(!_0x40e9b3)return alert('Pilih\x20kating\x20terlebih\x20dahulu!');if(selectedKatings["\u006c\u0065\u006e\u0067\u0074\u0068"]>=maxKating)return alert('Maksimal\x204\x20kating!');selectedKatings["\u0070\u0075\u0073\u0068"](_0x40e9b3);renderSelected();if(angkatanSelect)angkatanSelect['dispatchEvent'](new Event("\u0063\u0068\u0061\u006e\u0067\u0065"));}function renderSelected(){if(!selectedList)return;selectedList["\u0069\u006e\u006e\u0065\u0072\u0048\u0054\u004d\u004c"]='';selectedKatings["\u0066\u006f\u0072\u0045\u0061\u0063\u0068"]((_0x13b259,_0x5580cd)=>{const _0x113876=document["\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006c\u0065\u006d\u0065\u006e\u0074"]("vid".split("").reverse().join(""));_0x113876["\u0063\u006c\u0061\u0073\u0073\u004e\u0061\u006d\u0065"]='flex\x20justify-between\x20items-center\x20bg-blue-50\x20p-2\x20rounded-lg\x20text-sm';_0x113876["\u0069\u006e\u006e\u0065\u0072\u0048\u0054\u004d\u004c"]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span>'+_0x13b259+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22removeKating('+_0x5580cd+')\x22\x20class=\x22text-red-500\x20hover:text-red-700\x22>✕</button>\x0a\x20\x20\x20\x20\x20\x20';selectedList["\u0061\u0070\u0070\u0065\u006e\u0064\u0043\u0068\u0069\u006c\u0064"](_0x113876);});}function removeKating(_0x53857e){selectedKatings['splice'](_0x53857e,0x5f9f1^0x5f9f0);renderSelected();if(angkatanSelect)angkatanSelect['dispatchEvent'](new Event("\u0063\u0068\u0061\u006e\u0067\u0065"));}const db=firebase["\u0066\u0069\u0072\u0065\u0073\u0074\u006f\u0072\u0065"]();const sharingListEl=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("\u0073\u0068\u0061\u0072\u0069\u006e\u0067\u004c\u0069\u0073\u0074");const countUpcomingEl=document["\u0067\u0065\u0074\u0045\u006c\u0065\u006d\u0065\u006e\u0074\u0042\u0079\u0049\u0064"]("gnimocpUtnuoc".split("").reverse().join(""));const countCompletedEl=document['getElementById']("\u0063\u006f\u0075\u006e\u0074\u0043\u006f\u006d\u0070\u006c\u0065\u0074\u0065\u0064");function updateDashboardCounts(_0xd30eba,_0x3da1ac){if(countUpcomingEl&&_0xd30eba!==null&&_0xd30eba!==undefined){countUpcomingEl['textContent']=_0xd30eba;}if(countCompletedEl&&_0x3da1ac!==null&&_0x3da1ac!==undefined){countCompletedEl["\u0074\u0065\u0078\u0074\u0043\u006f\u006e\u0074\u0065\u006e\u0074"]=_0x3da1ac;}}function getUserDisplayName(_0x5f4c71){if(!_0x5f4c71)return'';const _0x3f1be4=_0x5f4c71["\u0065\u006d\u0061\u0069\u006c"]["\u0073\u0070\u006c\u0069\u0074"]("\u0040")[0x98c3b^0x98c3b];return name25[_0x3f1be4]||_0x5f4c71['email'];}function renderSharingList(_0x4c8fb6){if(!sharingListEl)return;sharingListEl["\u0069\u006e\u006e\u0065\u0072\u0048\u0054\u004d\u004c"]='';_0x4c8fb6['forEach'](_0x3ee30c=>{const _0x286f0e=_0x3ee30c["\u0064\u0061\u0074\u0061"]();const _0x7c4dee=_0x3ee30c['id'];const _0x3ed33a=currentUser&&_0x286f0e['creator']===currentUser["\u0075\u0069\u0064"];const _0x1f9365=currentUser&&Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x286f0e["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"])&&_0x286f0e['participants']['includes'](currentUser["\u0065\u006d\u0061\u0069\u006c"]);const _0x174a6f=Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x286f0e["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"])&&_0x286f0e['participants']['length']>=(0x5926e^0x59264);const _0x215d14=!_0x3ed33a&&!_0x1f9365&&!_0x174a6f;const _0x4a6ac3=!_0x3ed33a&&_0x1f9365;const _0x3ded47=(_0x286f0e['date']||'')+'\x20'+(_0x286f0e["\u0074\u0069\u006d\u0065"]||'');const _0x51c420=Array['isArray'](_0x286f0e["\u006b\u0061\u0074\u0069\u006e\u0067"])?_0x286f0e["\u006b\u0061\u0074\u0069\u006e\u0067"]['map'](_0x338751=>'<span\x20class=\x22inline-block\x20bg-yellow-100\x20text-yellow-800\x20px-2\x20py-0.5\x20rounded\x20mr-1\x20mb-1\x20text-xs\x20transition\x20transform\x20duration-300\x20hover:scale-105\x20hover:shadow-xl\x22>'+_0x338751+">naps/<".split("").reverse().join(""))["\u006a\u006f\u0069\u006e"]('\x20'):'';const _0x2dc58f=Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x286f0e["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"])?_0x286f0e["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]['length']:0x276a0^0x276a0;let _0x52d44b='';if(Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x286f0e['participants'])&&_0x286f0e["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]["\u006c\u0065\u006e\u0067\u0074\u0068"]>(0xa5557^0xa5557)){_0x52d44b=_0x286f0e['participants']["\u006d\u0061\u0070"](_0x2256e1=>{let _0x28a46e=_0x2256e1;if(_0x2256e1["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"]&&_0x2256e1['includes']("\u0040")){_0x28a46e=_0x2256e1["\u0073\u0070\u006c\u0069\u0074"]("\u0040")[0x647cd^0x647cd];}return'<span\x20class=\x22inline-block\x20bg-gray-100\x20text-gray-700\x20px-2\x20py-0.5\x20rounded\x20mr-1\x20mb-1\x20text-xs\x20transition\x20transform\x20duration-300\x20hover:scale-105\x20hover:shadow-xl\x22>'+(name25[_0x28a46e]||_0x28a46e)+">naps/<".split("").reverse().join("");})["\u006a\u006f\u0069\u006e"]('\x20');}const _0x521b9a=document['createElement']("vid".split("").reverse().join(""));_0x521b9a["\u0063\u006c\u0061\u0073\u0073\u004e\u0061\u006d\u0065"]='card\x20bg-white\x20p-5\x20rounded-xl\x20shadow\x20transition\x20transform\x20duration-300\x20hover:scale-105\x20hover:shadow-xl\x20flex\x20flex-col';_0x521b9a["\u0069\u006e\u006e\u0065\u0072\u0048\u0054\u004d\u004c"]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-sm\x20text-gray-400\x20mb-2\x22>Dibuat\x20oleh:\x20<span\x20class=\x22font-semibold\x22>'+(_0x286f0e['creatorName']||_0x286f0e['creator'])+'</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mt-2\x20space-y-2\x20text-gray-600\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>'+_0x51c420+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-sm\x20text-gray-500\x20mb-1\x22>'+_0x2dc58f+'\x20Peserta:</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20flex-wrap\x20gap-1\x22>'+_0x52d44b+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>🕒\x20'+_0x3ded47+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>📍\x20'+(_0x286f0e["\u0074\u0065\u006d\u0070\u0061\u0074"]||'')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mt-4\x20border-t\x20pt-4\x20flex\x20justify-between\x20items-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x174a6f?'<span\x20class=\x22text-xs\x20text-red-500\x22>Penuh</span>':'')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mt-6\x20flex\x20gap-2\x20items-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x3ed33a?'<button\x20onclick=\x22deleteSharing(\x27'+_0x7c4dee+'\x27)\x22\x20class=\x22w-full\x20bg-red-500\x20text-white\x20py-2\x20rounded-lg\x20hover:bg-red-700\x20transition\x22>Hapus</button>':_0x4a6ac3?'<button\x20onclick=\x22batalJoinSharing(\x27'+_0x7c4dee+'\x27)\x22\x20class=\x22w-full\x20bg-gray-400\x20text-white\x20py-2\x20rounded-lg\x20hover:bg-gray-600\x20transition\x22>Batal\x20Ikuti</button>':'<button\x20onclick=\x22joinSharing(\x27'+_0x7c4dee+'\x27)\x22\x20class=\x22w-full\x20bg-yellow-500\x20text-white\x20py-2\x20rounded-lg\x20hover:bg-yellow-700\x20transition\x22\x20'+(_0x215d14?'':'disabled\x20style=\x27opacity:0.5;cursor:not-allowed\x27')+'>Ikuti\x20Sharing</button>')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22copySchedule(\x27'+_0x7c4dee+'\x27)\x22\x20title=\x22Copy\x20raw\x20data\x22\x20class=\x22p-2\x20bg-gray-200\x20rounded\x20hover:bg-gray-300\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20📋\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x3ed33a||_0x1f9365?'<button\x20onclick=\x22completeSchedule(\x27'+_0x7c4dee+'\x27)\x22\x20title=\x22Mark\x20as\x20completed\x22\x20class=\x22p-2\x20bg-green-200\x20rounded\x20hover:bg-green-300\x22>✅</button>':'')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';sharingListEl['appendChild'](_0x521b9a);});}function listenSharing(){db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")["\u006f\u0072\u0064\u0065\u0072\u0042\u0079"]("etad".split("").reverse().join(""),"csa".split("").reverse().join(""))["\u006f\u006e\u0053\u006e\u0061\u0070\u0073\u0068\u006f\u0074"](_0x3abf76=>{renderSharingList(_0x3abf76["\u0064\u006f\u0063\u0073"]);const _0x273ec9=currentUser?.["liame".split("").reverse().join("")];const _0x39938f=_0x273ec9?_0x3abf76["\u0064\u006f\u0063\u0073"]['filter'](_0x2132ca=>Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x2132ca["\u0064\u0061\u0074\u0061"]()["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"])&&_0x2132ca["\u0064\u0061\u0074\u0061"]()["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"](_0x273ec9))['length']:0x32397^0x32397;updateDashboardCounts(_0x39938f,null);},_0x120d4a=>{console["\u0065\u0072\u0072\u006f\u0072"]('listenSharing\x20error',_0x120d4a);if(_0x120d4a["\u0063\u006f\u0064\u0065"]==="\u0070\u0065\u0072\u006d\u0069\u0073\u0073\u0069\u006f\u006e\u002d\u0064\u0065\u006e\u0069\u0065\u0064"){alert('Tidak\x20punya\x20hak\x20akses\x20membaca\x20jadwal.\x20Cek\x20aturan\x20keamanan\x20Firestore.');}});}const completedListEl=document['getElementById']("tsiLdetelpmoc".split("").reverse().join(""));function renderCompletedList(_0x295efc){if(!completedListEl)return;completedListEl['innerHTML']='';_0x295efc["\u0066\u006f\u0072\u0045\u0061\u0063\u0068"](_0x4b541a=>{const _0x3f0228=_0x4b541a['data']();const _0xb5f43c=_0x4b541a['id'];const _0x40574f=Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x3f0228['participants'])?_0x3f0228['participants']["\u006d\u0061\u0070"](_0x49b886=>{let _0x335f12=_0x49b886;if(_0x49b886["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"]("\u0040"))_0x335f12=_0x49b886["\u0073\u0070\u006c\u0069\u0074"]("\u0040")[0x77c0f^0x77c0f];return name25[_0x335f12]||_0x335f12;})["\u006a\u006f\u0069\u006e"](',\x20'):'Tidak\x20ada\x20peserta';const _0x418fdc=(_0x3f0228["\u0064\u0061\u0074\u0065"]||'')+'\x20'+(_0x3f0228['time']||'');const _0x7e24f8=document['createElement']("\u0064\u0069\u0076");_0x7e24f8["\u0063\u006c\u0061\u0073\u0073\u004e\u0061\u006d\u0065"]='card\x20bg-white\x20dark:bg-gray-800\x20p-5\x20rounded-xl\x20shadow\x20transition\x20transform\x20duration-300\x20hover:scale-105\x20hover:shadow-xl';_0x7e24f8["\u0069\u006e\u006e\u0065\u0072\u0048\u0054\u004d\u004c"]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-sm\x20text-gray-400\x20mb-2\x22>Dibuat\x20oleh:\x20<span\x20class=\x22font-semibold\x22>'+(_0x3f0228["\u0063\u0072\u0065\u0061\u0074\u006f\u0072\u004e\u0061\u006d\u0065"]||_0x3f0228['creator'])+'</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mt-2\x20space-y-2\x20text-gray-600\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>🕒\x20'+_0x418fdc+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>📍\x20'+(_0x3f0228["\u0074\u0065\u006d\u0070\u0061\u0074"]||'')+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22text-sm\x22>Peserta:\x20'+_0x40574f+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22copySchedule(\x27'+_0xb5f43c+'\x27)\x22\x20class=\x22mt-4\x20p-2\x20bg-gray-200\x20rounded\x20hover:bg-gray-300\x22>📋</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';completedListEl["\u0061\u0070\u0070\u0065\u006e\u0064\u0043\u0068\u0069\u006c\u0064"](_0x7e24f8);});}function listenCompleted(){db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("seludehcSdetelpmoc".split("").reverse().join(""))['orderBy']("tAdetelpmoc".split("").reverse().join(""),"\u0064\u0065\u0073\u0063")['onSnapshot'](_0x27a3e4=>{const _0x50de4e=_0x27a3e4["\u0064\u006f\u0063\u0073"]["\u0066\u0069\u006c\u0074\u0065\u0072"](_0x554ce7=>{const _0x490010=_0x554ce7["\u0064\u0061\u0074\u0061"]()['participants'];return Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x490010)&&_0x490010["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"](currentUser?.["\u0065\u006d\u0061\u0069\u006c"]);});renderCompletedList(_0x50de4e);updateDashboardCounts(null,_0x50de4e["\u006c\u0065\u006e\u0067\u0074\u0068"]);},_0x432d39=>{console['error']('listenCompleted\x20error',_0x432d39);if(_0x432d39["\u0063\u006f\u0064\u0065"]==="\u0070\u0065\u0072\u006d\u0069\u0073\u0073\u0069\u006f\u006e\u002d\u0064\u0065\u006e\u0069\u0065\u0064"){alert('Tidak\x20punya\x20hak\x20akses\x20membaca\x20jadwal\x20selesai.\x20Cek\x20aturan\x20keamanan\x20Firestore.');}});}function saveSharing(){if(!currentUser)return alert('Harus\x20login!');const _0x3afec5=angkatanSelect["\u0076\u0061\u006c\u0075\u0065"];const _0x5d39ea=document['querySelector']('input[type=\x22datetime-local\x22]');const _0x87bbc2=document["\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006c\u0065\u0063\u0074\u006f\u0072"]('input[placeholder^=\x22Ex\x22]');const _0x115952=_0x5d39ea?_0x5d39ea["\u0076\u0061\u006c\u0075\u0065"]:'';const _0x4c2930=_0x87bbc2?_0x87bbc2['value']['trim']():'';if(!_0x3afec5||!_0x115952||!_0x4c2930||selectedKatings["\u006c\u0065\u006e\u0067\u0074\u0068"]===(0x27377^0x27377)){alert('Semua\x20field\x20harus\x20diisi!');return;}let _0x57f9fa='',_0x447754='';if(_0x115952["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"]("\u0054")){[_0x57f9fa,_0x447754]=_0x115952['split']("\u0054");}const _0x24be54={"\u0063\u0072\u0065\u0061\u0074\u006f\u0072":currentUser["\u0075\u0069\u0064"],"\u0063\u0072\u0065\u0061\u0074\u006f\u0072\u004e\u0061\u006d\u0065":getUserDisplayName(currentUser),'date':_0x57f9fa,"\u0074\u0069\u006d\u0065":_0x447754,"\u0074\u0065\u006d\u0070\u0061\u0074":_0x4c2930,'kating':[...selectedKatings],'participants':[currentUser['email']]};db['collection']("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")["\u0061\u0064\u0064"](_0x24be54)["\u0074\u0068\u0065\u006e"](()=>{closeModal();selectedKatings=[];renderSelected();if(angkatanSelect)angkatanSelect["\u0076\u0061\u006c\u0075\u0065"]='';if(katingSelect)katingSelect["\u0069\u006e\u006e\u0065\u0072\u0048\u0054\u004d\u004c"]='<option\x20value=\x22\x22>--\x20Pilih\x20Kating\x20--</option>';if(_0x5d39ea)_0x5d39ea["\u0076\u0061\u006c\u0075\u0065"]='';if(_0x87bbc2)_0x87bbc2["\u0076\u0061\u006c\u0075\u0065"]='';})["\u0063\u0061\u0074\u0063\u0068"](_0x23a9ef=>alert('Gagal\x20simpan\x20jadwal:\x20'+_0x23a9ef["\u006d\u0065\u0073\u0073\u0061\u0067\u0065"]));}function joinSharing(_0x5ba4c5){if(!currentUser)return alert('Harus\x20login!');const _0x50064a=db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")["\u0064\u006f\u0063"](_0x5ba4c5);_0x50064a["\u0067\u0065\u0074"]()['then'](_0x580bda=>{if(!_0x580bda["\u0065\u0078\u0069\u0073\u0074\u0073"])return alert('Jadwal\x20tidak\x20ditemukan');const _0xc2e0b8=_0x580bda["\u0064\u0061\u0074\u0061"]();if(!Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0xc2e0b8['participants']))return alert('Data\x20peserta\x20rusak!');if(_0xc2e0b8['participants']['includes'](currentUser["\u0065\u006d\u0061\u0069\u006c"]))return alert('Sudah\x20terdaftar\x20di\x20sharing\x20ini!');if(_0xc2e0b8["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]['length']>=(0xa3a3c^0xa3a36))return alert('Peserta\x20sudah\x20penuh!');_0x50064a['update']({"\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073":firebase['firestore']["\u0046\u0069\u0065\u006c\u0064\u0056\u0061\u006c\u0075\u0065"]["\u0061\u0072\u0072\u0061\u0079\u0055\u006e\u0069\u006f\u006e"](currentUser['email'])});});}function deleteSharing(_0x2b88fa){if(!currentUser)return alert('Harus\x20login!');const _0xf7720a=db['collection']("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")['doc'](_0x2b88fa);_0xf7720a["\u0067\u0065\u0074"]()['then'](_0x1c0458=>{if(!_0x1c0458["\u0065\u0078\u0069\u0073\u0074\u0073"])return alert('Jadwal\x20tidak\x20ditemukan');const _0x325dd3=_0x1c0458["\u0064\u0061\u0074\u0061"]();if(_0x325dd3["\u0063\u0072\u0065\u0061\u0074\u006f\u0072"]!==currentUser["\u0075\u0069\u0064"])return alert('Hanya\x20pembuat\x20yang\x20bisa\x20menghapus!');if(!confirm('Yakin\x20hapus\x20jadwal\x20sharing\x20ini?'))return;_0xf7720a['delete']();});}function copySchedule(_0x42c36e){const _0x41a2c1=db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")['doc'](_0x42c36e);_0x41a2c1["\u0067\u0065\u0074"]()['then'](_0x1c59ca=>{if(!_0x1c59ca['exists'])return alert('Jadwal\x20tidak\x20ditemukan');const _0x1719c1=_0x1c59ca["\u0064\u0061\u0074\u0061"]();let _0x242ab8='';if(_0x1719c1['kating']['length']>(0x33fbe^0x33fbf)){for(let _0x2310cd=0x2b4ed^0x2b4ed;_0x2310cd<_0x1719c1["\u006b\u0061\u0074\u0069\u006e\u0067"]["\u006c\u0065\u006e\u0067\u0074\u0068"];_0x2310cd++){_0x242ab8=_0x242ab8+(_0x2310cd+(0x425a1^0x425a0)+'.\x20'+_0x1719c1["\u006b\u0061\u0074\u0069\u006e\u0067"][_0x2310cd]+'\x0a');}}else{_0x242ab8=_0x1719c1['kating'][0x81cf4^0x81cf4]+'\x0a';}let _0x2172d8='';if(_0x1719c1["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]['length']>(0x2b20b^0x2b20a)){for(let _0x2cd1c1=0x8f678^0x8f678;_0x2cd1c1<_0x1719c1["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]["\u006c\u0065\u006e\u0067\u0074\u0068"];_0x2cd1c1++){_0x2172d8=_0x2172d8+(_0x2cd1c1+(0x903c4^0x903c5)+'.\x20'+name25[_0x1719c1['participants'][_0x2cd1c1]["\u0073\u0070\u006c\u0069\u0074"]("\u0040")[0x381d7^0x381d7]]+'\x0a');}}else{_0x2172d8=name25[_0x1719c1["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"][i]["\u0073\u0070\u006c\u0069\u0074"]("\u0040")[0x79550^0x79550]];}const _0x460939='\x0aList\x20sharing\x20bersama\x20kak/bang:\x0a'+_0x242ab8+'\x0aWaktu:\x20'+_0x1719c1["\u0064\u0061\u0074\u0065"]+',\x20'+_0x1719c1['time']+'\x20WIB\x0aTempat:\x20'+_0x1719c1["\u0074\u0065\u006d\u0070\u0061\u0074"]+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a'+_0x2172d8;navigator["\u0063\u006c\u0069\u0070\u0062\u006f\u0061\u0072\u0064"]["\u0077\u0072\u0069\u0074\u0065\u0054\u0065\u0078\u0074"](_0x460939)["\u0074\u0068\u0065\u006e"](()=>alert('Data\x20jadwal\x20disalin\x20ke\x20clipboard.'))['catch'](_0x3cde0a=>alert('Gagal\x20menyalin:\x20'+_0x3cde0a));});}function completeSchedule(_0x4d57a0){if(!currentUser)return alert('Harus\x20login!');const _0x38e975=db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("seludehcs".split("").reverse().join(""))["\u0064\u006f\u0063"](_0x4d57a0);_0x38e975["\u0067\u0065\u0074"]()["\u0074\u0068\u0065\u006e"](_0x314b5e=>{if(!_0x314b5e['exists'])return alert('Jadwal\x20tidak\x20ditemukan');const _0x5a010b=_0x314b5e["\u0064\u0061\u0074\u0061"]();const _0x419587=currentUser['email'];if(!(_0x5a010b['creator']===currentUser["\u0075\u0069\u0064"]||Array["\u0069\u0073\u0041\u0072\u0072\u0061\u0079"](_0x5a010b["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"])&&_0x5a010b["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"](_0x419587))){return alert('Hanya\x20peserta\x20yang\x20bisa\x20menandai\x20selesai.');}db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("seludehcSdetelpmoc".split("").reverse().join(""))["\u0061\u0064\u0064"]({..._0x5a010b,"\u0063\u006f\u006d\u0070\u006c\u0065\u0074\u0065\u0064\u0041\u0074":firebase["\u0066\u0069\u0072\u0065\u0073\u0074\u006f\u0072\u0065"]["\u0046\u0069\u0065\u006c\u0064\u0056\u0061\u006c\u0075\u0065"]["\u0073\u0065\u0072\u0076\u0065\u0072\u0054\u0069\u006d\u0065\u0073\u0074\u0061\u006d\u0070"]()})['then'](()=>_0x38e975['delete']());});}document["\u0061\u0064\u0064\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"]("dedaoLtnetnoCMOD".split("").reverse().join(""),()=>{const _0x185427=document["\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006c\u0065\u0063\u0074\u006f\u0072"]('#modal\x20.bg-yellow-500.text-white.px-6');if(_0x185427)_0x185427["\u0061\u0064\u0064\u0045\u0076\u0065\u006e\u0074\u004c\u0069\u0073\u0074\u0065\u006e\u0065\u0072"]("\u0063\u006c\u0069\u0063\u006b",saveSharing);const _0x3e19e2=document['querySelector']('#modal\x20.bg-yellow-500.text-white:not(.px-6)');if(_0x3e19e2)_0x3e19e2['addEventListener']("kcilc".split("").reverse().join(""),addKating);listenSharing();listenCompleted();});function batalJoinSharing(_0xff698b){if(!currentUser)return alert('Harus\x20login!');const _0x4d0ff1=db["\u0063\u006f\u006c\u006c\u0065\u0063\u0074\u0069\u006f\u006e"]("\u0073\u0063\u0068\u0065\u0064\u0075\u006c\u0065\u0073")["\u0064\u006f\u0063"](_0xff698b);_0x4d0ff1['get']()['then'](_0x3d23df=>{if(!_0x3d23df['exists'])return alert('Jadwal\x20tidak\x20ditemukan');const _0x3b1183=_0x3d23df["\u0064\u0061\u0074\u0061"]();if(!Array['isArray'](_0x3b1183['participants']))return alert('Data\x20peserta\x20rusak!');if(!_0x3b1183["\u0070\u0061\u0072\u0074\u0069\u0063\u0069\u0070\u0061\u006e\u0074\u0073"]["\u0069\u006e\u0063\u006c\u0075\u0064\u0065\u0073"](currentUser["\u0065\u006d\u0061\u0069\u006c"]))return alert('Anda\x20belum\x20ikut\x20sharing\x20ini!');_0x4d0ff1['update']({'participants':firebase['firestore']["\u0046\u0069\u0065\u006c\u0064\u0056\u0061\u006c\u0075\u0065"]['arrayRemove'](currentUser['email'])});});}window['joinSharing']=joinSharing;window['deleteSharing']=deleteSharing;window["\u0062\u0061\u0074\u0061\u006c\u004a\u006f\u0069\u006e\u0053\u0068\u0061\u0072\u0069\u006e\u0067"]=batalJoinSharing;window["\u0063\u006f\u0070\u0079\u0053\u0063\u0068\u0065\u0064\u0075\u006c\u0065"]=copySchedule;window['completeSchedule']=completeSchedule;
+const name25 = {
+  'khayla.001': "KHAYLA AZIZAH RAHMAN",
+  "della.002": "DELLA AULIA NUR SAFITRI",
+  "rossa.003": "ROSSA INOVA DA SILVA",
+  'salsa.004': "SALSA TIARA SEPRIANI",
+  "milham.005": "M. ILHAM AL FAJRI",
+  "vera.006": "VERA DWI APRILIA",
+  "fauziah.007": "FAUZIAH AULIA FADILA",
+  'kaysa.008': "KAYSA JULIETA PUSPITA",
+  "sepia.009": "SEPIA ANGGUN SAPUTRI",
+  'anabel.010': "ANABEL NOVELINA MANURUNG",
+  'ririn.011': "RIRIN MARCELINA MANURUNG",
+  'sopia.012': "SOPIA PAKPAHAN",
+  "thessa.013": "THESSA MINARIA LUMBAN SIANTAR",
+  "damar.014": "DAMAR SAPUTRA",
+  'rendi.015': "RENDI ARIANTO SIHOTANG",
+  'naila.016': "NAILA KHUSI ALIF VIA",
+  "selvia.017": "SELVIA TIA IVANKA",
+  "aldi.018": "ALDI EKO PURNAMA",
+  "rama.019": "RAMA ADITIYA",
+  "sabila.020": "SABILA ALLISYA PUTRI",
+  'laura.022': "LAURA NIVOLIN",
+  "rika.023": "RIKA RAHAYU",
+  "hani.024": "HANI SAFIRA BELA",
+  'suci.025': "SUCI NAYLA SYIFA",
+  "alifia.026": "ALIFIA INDAH PRATIWI",
+  'nora.027': "NORA JESICA SEPTIANI SIMATUPANG",
+  "aldo.028": "ALDO FEBRIANSYAH",
+  "rtdewi.029": "RT.DEWI LAILATUL UMANIYYAH",
+  'nurul.030': "NURUL FITRIYANI",
+  "miya.031": "MIYA ARINI DAMANIK",
+  "bima.032": "BIMA ALANDIKA",
+  "olda.034": "OLDA EYUNIKE SIAHAAN",
+  "gebi.035": "GEBI MASRIDA NABABAN",
+  "josua.036": "JOSUA FRANSISCO SITUMEANG",
+  'grace.037': "GRACE THEODORA NATALINA MANURUNG",
+  'dhea.038': "DHEA AMELIA",
+  "julius.039": "JULIUS SIMAMORA",
+  "fazlur.040": "FAZLUR YAZID",
+  'hilarius.041': "HILARIUS JANNOELTA TARIGAN GIRSANG",
+  'yuly.042': "YULY FLOWER SIREGAR",
+  "priscilla.043": "PRISCILLA SYALOMITA GINTING",
+  "syahira.044": "SYAHIRA LULU RAMADHANI",
+  'khoirunnisaa.045': "KHOIRUNNISAA GHASSANI PUTRI",
+  "azwa.046": "AZWA ARDIYANTI AMDIAH",
+  'bintang.047': "BINTANG XERREND VERIXA",
+  'aldi.048': "ALDI KURNIAWAN",
+  "arindya.049": "ARINDYA SALSABILA AYU",
+  'fara.050': "FARA DWI YUSDITA",
+  'zatmiaty.051': 'ZATMIATY',
+  "lauren.052": "LAUREN AULIA RAMONA",
+  'grace.053': "GRACE RADOTIMA SIMANJUNTAK",
+  "mazmur.054": "MAZMUR SILAEN",
+  'yodha.055': "YODHA IDMONIA RAZAN",
+  'putri.056': "PUTRI LESTARI",
+  "hesti.059": "HESTI SAKINATUN",
+  'joyanti.060': "JOYANTI GULTOM",
+  "rachel.061": "RACHEL OLANDA ELIZABETH SITINJAK",
+  "desya.062": "DESYA CANTIKA ANGGRAINI",
+  "nayla.063": "NAYLA NUR AZIZAH",
+  "wahyu.064": "WAHYU AKBAR FAJARI",
+  'tiara.065': "TIARA SINAGA",
+  'sinky.066': "SINKY DWI SARI TAMSAR",
+  'uli.067': "ULI MUSLIHAH",
+  "marwa.068": "MARWA NADYA HASANAH",
+  "mrifqi.070": "M. RIFQI SAIFULLAH",
+  "wulan.071": "WULAN PANCAWATI",
+  "silva.072": "SILVA NOVITASARI",
+  'ana.073': "ANA ESTIANI",
+  'herty.074': "HERTY ROMAITO HABEAHAN",
+  'aura.075': "AURA RAHMA AZKYA PUTRI",
+  'nurmala.076': "NURMALA SAFITRI",
+  "elisa.077": "ELISA ANGGRAINI",
+  'yuko.078': "YUKO GERARD EDRA PANJAITAN",
+  "ramasari.079": "RAMASARI HASIBUAN",
+  'riza.080': "RIZA TRIANDINI",
+  'mrasya.081': "M. RASYA AGUSTIAN",
+  "vizka.082": "VIZKA AKDITYA",
+  'felecia.083': "FELECIA LIDWINA BR SINAGA",
+  "panglimatempur": "ADMIN"
+};
+const katingData = {
+  2023: ["LENY PUSPITA NINGRUM", "SAFITRI DWI UTARI", "ROLASNI ROHAIDA BR SIDABUTAR", "ANISHA RAHMADANI SUWANDI", "RANI TIARA DEWI", "SILVI AGUSTIANI", "ANANDA HIDAYAH PURNAMA", "ELSA AMALIA", "JOVITA RIDIANA PUTRI", "DIAZTI ANY DWI HERLAMBANG", "SABELA BUDI UTAMI", "FITRIANA SEMBIRING", "SISKA VALENTINA", "AMILIA FATIMAH NURAINI", "FEBRI YURITA SARI", "ARTIVA NOVA", "RANI SYIFA RAHIMARAHMAN", "DESTI PUJI ASTUTI", "OKTAVIA NURVITA DARMAYANTI", "IMA PARRONA SIMANJUNTAK", "LAURA SISKA AMANDA", "EMILIZA OKTAVIA RAMADANI", "FITRIA DWI ANGGRAINI", "LARAS AYU PRIYADI", "PUTRI RATNA SARI", "TIANESA MARCHELLINE PAKPAHAN", "FEBRIANTI AMELIA PUTRI", "DIAN MONALISA NAINGGOLAN", "GLORIA MISCHELIN ROTHUA SEPTIANI", "DAVINA SALSABILLA", "JIHAN FADHIA PUTRI HAMIDI", "GIZKA FADHILA HUSNI", "AISAH MULYA NINGRUM", "JOY PATIARMA SITUMORANG", "ESTER AULIA SIDABUTAR", "SHEFIRA LELI HASANAH", "NAYLA NURUL AISYAH", "AMELIA OKTAVIANI", "NURMA WIDIA SAPUTRI", "CRISTIANI ANJELINA PURBA", "CITRA PURBA", "MUKHLISHAH FITHAAH", "JELITA ANASTASHA SIDABUTAR", "THALIA SASI KIRANA DEWI", "ANGELINE CHRISTY ARUAN", "SASI KIRANA ZAHRANI", "RIDHO ELYEZER SIHOMBING", "WINDA SUHARTINI AZAHRA", "ARIEL SITUMORANG", "ANGGI RENATA BR. BARUS"],
+  2024: ["Muatiara Sabrina", "Izdhihara Afifah", "Amelia Sugesti", "Martina Tri Mikha", "Rizky Ayu Rahmawati", "Juan Leonard Nathaniel Pello", "Theresia Siallagan", "Nazwa Reza Fahlevi", "Salsa Adhiningtias", "Anastasya Aie Sabrina", "Fevbry Allenda Putri", "Annisa Rahmawati", "Destri Cencya Purba", "Novia Clara Sinaga", "Fasih Fadillah", "Silvia Dwiyanti", "Luthfia Aida", "Gabriella Agnes Sonia Sinaga", "Boy Sihotang", "Lidia Rahel Saragih", "Kesya Adelina Simamora", "Aniela Lepana Putri", "Adinda Dwi Novitasari", "Evan Fabiano Resdiyanto", "Amelia Putri", "Pola Dwita Mariahni Sinaga", "Daniel Manurung", "Ainun Mardiah", "Fabrizio Fazar Sinaga", "Dian Paramita", "Benediktus Christiano Sihaan", "Daffa Ihsan Naufal", "Putri Adelia", "Perimsa S. Pandia", "Annisa Soleha Nurjannah", "Indah Puspita Rini", "Shintia Ronauli Simanjuntak", "Asyita Pratiwi", "Dea Abelia Saskia Putri", "Daniel Yohanre Kevin Pasaribu", "Isnaini Az-Zahra", "Fiqy Haziz Ibrahim", "Fitriana", "Winda Sartika Lumbantoruan", "Ropaska Adri Naibaho", "Daniel Manurung", "Annisa Dwi Rahmani", "Widya Tri Wulandari", "Difa Dirgo Dirgantoro", "Mutiara Pardosi", "Aulia Kartika", "Porman Sihombing", "Ezy Saputra Pardosi", "Angelia Saragih", "Dea Puspita", "Astri Pratiwi Margareta", "Fazri Togatorop", "Herviana Octavia Rahma Dani", "M. Daffa Deaz Pratama"]
+};
+const adminList = ["panglimatempur"];
+
+// Variabel bantu untuk mengecek status admin
+function isAdmin() {
+    if (!currentUser) return false;
+    const username = currentUser.email.split("@")[0];
+    return adminList.includes(username);
+}
+
+const linkApps = "https://script.google.com/macros/s/AKfycbxDNN9SVgWpCd0Vlne9kEdf5dBedwPTlSazO1GKsCBjTI9rsNUwRabUW3zXhO1Dd2FC/exec"
+
+/* =========================================
+   1. KONFIGURASI & VARIABEL GLOBAL
+   ========================================= */
+const db = firebase.firestore();
+let currentUser = null;
+let inactivityTimer = null;
+let selectedKatings = [];
+
+/* =========================================
+   2. INITIALIZATION (DOM CONTENT LOADED)
+   ========================================= */
+document.addEventListener("DOMContentLoaded", () => {
+    initAuth();
+
+    // Event Listener untuk elemen statis
+    const angkatanSelect = document.getElementById("angkatanSelect");
+    if (angkatanSelect) {
+        angkatanSelect.addEventListener("change", handleAngkatanChange);
+    }
+
+    // Listener Tombol di Modal (Tambah Kating & Simpan)
+    // Berdasarkan HTML: mencari button berdasarkan teks/posisi karena tidak ada ID
+    const modalButtons = document.querySelectorAll("#modal button");
+    modalButtons.forEach(btn => {
+        if (btn.innerText.includes("Tambah Kating")) {
+            btn.addEventListener("click", addKating);
+        }
+        if (btn.innerText.includes("Simpan Jadwal")) {
+            btn.addEventListener("click", saveSharing);
+        }
+    });
+
+    // Sign Out
+    document.getElementById("signOutBtn")?.addEventListener("click", () => firebase.auth().signOut());
+});
+
+/* =========================================
+   3. LOGIKA AUTH & INACTIVITY
+   ========================================= */
+function initAuth() {
+    firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+            currentUser = user;
+            showApp(user);
+            listenSharing();
+            listenCompleted();
+            if (isAdmin()) {
+                listenReview();
+            }
+        } else {
+            currentUser = null;
+            stopActivityListeners();
+            showLogin();
+        }
+    });
+
+    document.getElementById("btnLogin")?.addEventListener("click", handleLogin);
+}
+
+async function handleLogin() {
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value;
+    const errorEl = document.getElementById("loginError");
+
+    if (!email || !password) return alert("Email dan Password wajib diisi");
+
+    try {
+        await firebase.auth().signInWithEmailAndPassword(email, password);
+    } catch (err) {
+        errorEl.textContent = err.message;
+        errorEl.classList.remove("hidden");
+    }
+}
+
+function resetInactivityTimer() {
+    if (inactivityTimer) clearTimeout(inactivityTimer);
+    inactivityTimer = setTimeout(() => {
+        if (currentUser) {
+            firebase.auth().signOut();
+            alert("Anda otomatis logout karena tidak aktif selama 5 menit.");
+        }
+    }, 300000); // 5 Menit
+}
+
+async function uploadToDrive(fileInput) {
+    const file = fileInput.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async function(e) {
+        const base64 = e.target.result.split(',')[1];
+        const payload = {
+            base64: base64,
+            fileName: `${currentUser.email.split('@')[0]}_${file.name}`,
+            mimeType: file.type
+        };
+
+        try {
+            const response = await fetch(linkApps, {
+                method: "POST",
+                body: JSON.stringify(payload)
+            });
+            const result = await response.json();
+            
+            if(result.status === "success") {
+                alert("Tugas berhasil dikirim ke Drive!");
+                // Simpan link Drive ke Firestore sebagai bukti pengumpulan
+                db.collection("tugas").add({
+                    user: currentUser.email,
+                    fileUrl: result.url,
+                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                });
+            }
+        } catch (err) {
+            console.error("Upload gagal:", err);
+        }
+    };
+    reader.readAsDataURL(file);
+}
+
+function startActivityListeners() {
+    ["mousemove", "keydown", "click", "touchstart"].forEach(e => 
+        document.addEventListener(e, resetInactivityTimer)
+    );
+}
+
+function stopActivityListeners() {
+    ["mousemove", "keydown", "click", "touchstart"].forEach(e => 
+        document.removeEventListener(e, resetInactivityTimer)
+    );
+    if (inactivityTimer) clearTimeout(inactivityTimer);
+}
+
+/* =========================================
+   4. MANAJEMEN UI & PAGE NAVIGATION
+   ========================================= */
+function showApp(user) {
+    document.getElementById("loginPage").classList.add("hidden");
+    const username = user.email.split("@")[0];
+    document.getElementById("userEmail").textContent = name25[username] || user.email;
+    startActivityListeners();
+    resetInactivityTimer();
+    loadProfileOnStart(user);
+    if (isAdmin()) {
+        document.getElementById("menuReview")?.classList.remove("hidden");
+        listenReview()
+    }
+}
+
+function showLogin() {
+    document.getElementById("loginPage").classList.remove("hidden");
+}
+
+function showPage(pageId) {
+    const pages = ["dashboardPage", "jadwalPage", "completedPage", "reviewPage"];
+    
+    // 1. Sembunyikan semua page
+    pages.forEach(p => {
+        const el = document.getElementById(p);
+        if (el) el.classList.add("hidden");
+    });
+
+    // 2. Tentukan target page
+    const titleMap = {
+        'dashboard': 'Dashboard',
+        'jadwal-sharing': 'Jadwal Sharing',
+        'completed': 'Sharing Selesai',
+        'review': "Kelola Sharing"
+    };
+
+    const targetId = pageId === 'jadwal-sharing' ? 'jadwalPage' : pageId + 'Page';
+    const targetEl = document.getElementById(targetId);
+    
+    if (targetEl) {
+        targetEl.classList.remove("hidden");
+    }
+
+    // 3. Update judul halaman
+    const titleEl = document.getElementById("pageTitle");
+    if (titleEl) {
+        titleEl.innerText = titleMap[pageId] || "Efromatika";
+    }
+
+    // 4. Update status tombol menu (Bagian yang error tadi)
+    document.querySelectorAll(".menu-btn").forEach(btn => {
+        // Reset warna tombol
+        btn.classList.remove("bg-yellow-500", "text-white");
+        btn.classList.add("text-gray-600");
+
+        // Ambil atribut onclick, pastikan tidak null sebelum memanggil .includes()
+        const clickAttr = btn.getAttribute("onclick");
+        if (clickAttr && clickAttr.includes(pageId)) {
+            btn.classList.add("bg-yellow-500", "text-white");
+            btn.classList.remove("text-gray-600");
+        }
+    });
+
+    // Tutup sidebar jika di mobile setelah pilih menu
+    const sidebar = document.getElementById("sidebar");
+    if (window.innerWidth < 768 && sidebar && !sidebar.classList.contains("-translate-x-full")) {
+        toggleSidebar();
+    }
+}
+
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("-translate-x-full");
+    document.getElementById("sidebarOverlay").classList.toggle("hidden");
+}
+
+function openModal() {
+    const overlay = document.getElementById("overlay");
+    const modal = document.getElementById("modal");
+    overlay.classList.remove("hidden");
+    setTimeout(() => {
+        modal.classList.remove("scale-95", "opacity-0");
+        modal.classList.add("scale-100", "opacity-100");
+    }, 10);
+}
+
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.classList.add("scale-95", "opacity-0");
+    setTimeout(() => document.getElementById("overlay").classList.add("hidden"), 300);
+}
+
+/* =========================================
+   5. DROPDOWN KATING LOGIC (AUTO-FILTER)
+   ========================================= */
+function handleAngkatanChange() {
+    const angkatan = document.getElementById("angkatanSelect").value;
+    const katingSelect = document.getElementById("katingSelect");
+    katingSelect.innerHTML = '<option value="">-- Pilih Kating --</option>';
+
+    if (!angkatan) return;
+
+    const list = katingData[angkatan] || [];
+    list.forEach(nama => {
+        // Logika: Jangan tampilkan jika sudah ada di list terpilih
+        if (!selectedKatings.includes(nama)) {
+            const opt = document.createElement("option");
+            opt.value = nama;
+            opt.textContent = nama;
+            katingSelect.appendChild(opt);
+        }
+    });
+}
+
+function addKating() {
+    const katingSelect = document.getElementById("katingSelect");
+    const val = katingSelect.value;
+
+    if (!val) return alert("Pilih kating!");
+    if (selectedKatings.length >= 4) return alert("Maksimal 4 kating!");
+
+    selectedKatings.push(val);
+    renderSelected();
+    handleAngkatanChange(); // Refresh dropdown (otomatis terhapus dari opsi)
+}
+
+function removeKating(index) {
+    selectedKatings.splice(index, 1);
+    renderSelected();
+    handleAngkatanChange(); // Refresh dropdown (kating kembali muncul di opsi)
+}
+
+function renderSelected() {
+    const listEl = document.getElementById("selectedList");
+    listEl.innerHTML = "";
+    selectedKatings.forEach((nama, i) => {
+        const item = document.createElement("div");
+        item.className = "flex justify-between items-center bg-yellow-50 p-2 rounded-lg text-sm border border-yellow-200";
+        item.innerHTML = `<span>${nama}</span><button onclick="removeKating(${i})" class="text-red-500">✕</button>`;
+        listEl.appendChild(item);
+    });
+}
+
+/* =========================================
+   6. FIRESTORE CRUD OPERATIONS
+   ========================================= */
+function listenSharing() {
+    db.collection("schedules").orderBy("date", "asc").onSnapshot(snap => {
+        const listEl = document.getElementById("sharingList");
+        const countActiveEl = document.getElementById("countCompleted");
+        if (countActiveEl) {
+            countActiveEl.innerText = snap.size; // Update angka di dashboard
+        }
+        if (!listEl) return;
+        listEl.innerHTML = "";
+        let myCount = 0;
+        snap.forEach(doc => {
+            const data = doc.data();
+            const isParticipant = data.participants.includes(currentUser.email);
+            if(isParticipant) myCount++;
+
+            renderCard(listEl, doc.id, data, false);
+        });
+        document.getElementById("countUpcoming").innerText = myCount;
+    });
+}
+
+function listenCompleted() {
+    db.collection("completedSchedules")
+      .orderBy("finalizedAt", "desc")
+      .onSnapshot((snap) => {
+        const container = document.getElementById("completedList");
+        const countEl = document.getElementById("countCompleted"); // ID di Dashboard
+        
+        if (!container) return;
+        container.innerHTML = "";
+
+        // Update Counter di Dashboard
+        if (countEl) {
+            countEl.innerText = snap.size; // Mengambil jumlah dokumen
+        }
+
+        if (snap.empty) {
+            container.innerHTML = "<p class='text-gray-500 italic'>Belum ada sharing yang diselesaikan.</p>";
+            return;
+        }
+
+        snap.forEach((doc) => {
+            renderCompletedCard(container, doc.id, doc.data());
+        });
+    });
+}
+
+async function saveSharing() {
+    const angkatan = document.getElementById("angkatanSelect").value;
+    const dateTime = document.querySelector("input[type='datetime-local']").value;
+    const tempat = document.querySelector("input[placeholder^='Ex']").value.trim();
+
+    if (!angkatan || !dateTime || !tempat || selectedKatings.length === 0) {
+        return alert("Mohon lengkapi semua data!");
+    }
+
+    const [date, time] = dateTime.split("T");
+    const payload = {
+        creator: currentUser.uid,
+        creatorName: name25[currentUser.email.split("@")[0]] || currentUser.email,
+        date, time, tempat,
+        kating: [...selectedKatings],
+        participants: [currentUser.email]
+    };
+
+    try {
+        await db.collection("schedules").add(payload);
+        closeModal();
+        selectedKatings = [];
+        renderSelected();
+        document.getElementById("angkatanSelect").value = "";
+        handleAngkatanChange();
+    } catch (err) {
+        alert("Gagal simpan: " + err.message);
+    }
+}
+
+function renderCompletedCard(container, id, data) {
+    const card = document.createElement("div");
+    card.className = "bg-white p-5 rounded-xl shadow border-l-4 border-green-500 opacity-90 hover:opacity-100 transition";
+    
+    // Format tanggal jika ada finalizedAt
+    const finishDate = data.finalizedAt ? new Date(data.finalizedAt.seconds * 1000).toLocaleDateString('id-ID') : '-';
+
+    card.innerHTML = `
+        <div class="flex justify-between items-start mb-2">
+            <div>
+                <h3 class="font-bold text-gray-700">${data.judul || 'Sharing Selesai'}</h3>
+                <p class="text-xs text-gray-500">Pembuat: ${data.creatorName}</p>
+            </div>
+            <span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold">SUCCESS</span>
+        </div>
+        
+        <div class="text-xs text-gray-600 space-y-1 mb-4">
+            <p>📍 ${data.tempat}</p>
+            <p>📅 ${data.date}</p>
+            <p class="text-[10px] text-gray-400 mt-2">Disetujui pada: ${finishDate}</p>
+        </div>
+
+        <a href="${data.proofUrl}" target="_blank" 
+           class="block text-center py-2 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-gray-200 transition">
+           📄 Lihat Bukti Sharing
+        </a>
+    `;
+    container.appendChild(card);
+}
+
+function renderCard(container, id, data, isCompleted) {
+    const card = document.createElement("div");
+    card.className = "bg-white p-5 rounded-xl shadow-md space-y-3 border-l-4 border-yellow-500 transition transform hover:shadow-lg transition transform duration-300 hover:scale-105 hover:shadow-xl";
+    
+    // Pil untuk Kating (Warna Kuning)
+    const katingBadges = data.kating.map(k => 
+        `<span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-[10px] font-medium mr-1 border border-yellow-200 transition transform duration-300 hover:scale-105 hover:shadow-xl">${k}</span>`
+    ).join("");
+
+    // Pil untuk Peserta (Warna Biru/Abu)
+    // Mengonversi email menjadi nama asli menggunakan data name25 jika tersedia
+    const participantBadges = data.participants.map(p => {
+        const username = p.split("@")[0];
+        const displayName = name25[username] || username;
+        return `<span class="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-[10px] font-medium mr-1 border border-blue-100 transition transform duration-300 hover:scale-105 hover:shadow-xl">${displayName}</span>`;
+    }).join("");
+
+    const isOwner = data.creator === currentUser.uid;
+    const isJoined = data.participants.includes(currentUser.email);
+
+    card.innerHTML = `
+        <div class="flex justify-between items-start">
+            <p class="text-xs text-gray-400">Oleh: ${data.creatorName}</p>
+            <span class="text-[10px] font-bold ${data.participants.length >= 10 ? 'text-red-500' : 'text-green-500'}">
+                ${data.participants.length}/10 Peserta
+            </span>
+        </div>
+
+        <div class="space-y-2">
+            <div>
+                <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-1">Kating:</p>
+                <div class="flex flex-wrap gap-y-1">${katingBadges}</div>
+            </div>
+            
+            <div>
+                <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-1">Peserta Terdaftar:</p>
+                <div class="flex flex-wrap gap-y-1">${participantBadges}</div>
+            </div>
+        </div>
+
+        <div class="text-sm text-gray-600 space-y-1 pt-2 border-t border-gray-50">
+            <p>🕒 ${data.date}, ${data.time} WIB</p>
+            <p>📍 ${data.tempat}</p>
+        </div>
+
+        <div class="pt-3 flex flex-wrap gap-2">
+            ${!isCompleted ? `
+                ${isOwner ? `<button onclick="deleteSharing('${id}')" class="bg-red-500 text-white px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-red-600 transition">Hapus</button>` : ""}
+                ${isJoined ? 
+                    `<button onclick="batalJoin('${id}')" class="bg-gray-200 text-gray-600 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-gray-300 transition">Batal Ikut</button>` : 
+                    `<button onclick="joinSharing('${id}')" class="bg-yellow-500 text-white px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-yellow-600 transition" ${data.participants.length >= 10 ? 'disabled' : ''}>Ikuti Sharing</button>`
+                }
+                ${isJoined ? `<button onclick="completeSharing('${id}')" class="bg-green-500 text-white px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-green-600 transition">Selesai ✅</button>` : ""}
+            ` : ""}
+            <button onclick="copyData('${id}')" class="bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-blue-100 transition ml-auto">Salin 📋</button>
+        </div>
+    `;
+    container.appendChild(card);
+}
+
+/* =========================================
+   7. ACTIONS (JOIN, DELETE, COMPLETE)
+   ========================================= */
+async function joinSharing(id) {
+    const ref = db.collection("schedules").doc(id);
+    const doc = await ref.get();
+    if(doc.data().participants.length >= 10) return alert("Penuh!");
+    
+    await ref.update({
+        participants: firebase.firestore.FieldValue.arrayUnion(currentUser.email)
+    });
+}
+
+async function batalJoin(id) {
+    await db.collection("schedules").doc(id).update({
+        participants: firebase.firestore.FieldValue.arrayRemove(currentUser.email)
+    });
+}
+
+async function deleteSharing(id) {
+    if(confirm("Hapus jadwal ini?")) {
+        await db.collection("schedules").doc(id).delete();
+    }
+}
+
+function completeSharing(id) {
+    document.getElementById("pendingScheduleId").value = id;
+    document.getElementById("proofOverlay").classList.remove("hidden");
+}
+
+function closeProofModal() {
+    document.getElementById("proofOverlay").classList.add("hidden");
+    document.getElementById("proofFile").value = "";
+}
+
+async function submitProofToReview() {
+    const fileInput = document.getElementById("proofFile");
+    const scheduleId = document.getElementById("pendingScheduleId").value;
+    const btn = document.getElementById("btnSubmitProof");
+
+    const file = fileInput.files[0];
+    if (!file) return alert("Pilih file bukti!");
+
+    btn.disabled = true;
+    btn.innerText = "Mengunggah...";
+
+    const reader = new FileReader();
+    reader.onload = async function(e) {
+        const base64 = e.target.result.split(',')[1];
+        const payload = {
+            base64: base64,
+            fileName: `125160${currentUser.email.split("@")[0].split(".")[1]}-${name25[currentUser.email.split("@")[0]]}-${scheduleId}`,
+            mimeType: file.type
+        };
+
+        try {
+            // KIRIM KE GOOGLE DRIVE
+            // Menggunakan mode: 'no-cors' untuk menghindari hambatan browser
+            await fetch(linkApps, {
+                method: "POST",
+                mode: "no-cors", 
+                headers: {
+                    "Content-Type": "text/plain"
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const scheduleDoc = await db.collection("schedules").doc(scheduleId).get();
+            const data = scheduleDoc.data();
+
+            await db.collection("reviewSchedules").doc(scheduleId).set({
+                ...data,
+                proofUrl: "https://drive.google.com/drive/folders/1rgcEQHDwgIwHWchGa6vPqSH0FmGD1KlM?usp=sharing", // Karena no-cors tidak bisa baca URL balik
+                submittedAt: firebase.firestore.FieldValue.serverTimestamp(),
+                status: "pending_review"
+            });
+
+            await db.collection("schedules").doc(scheduleId).delete();
+
+            closeProofModal();
+            alert("Bukti terkirim! Tunggu sampai diterima.");
+            
+        } catch (err) {
+            console.error("Upload Error:", err);
+            alert("Terjadi kesalahan saat mengirim data.");
+        } finally {
+            btn.disabled = false;
+            btn.innerText = "Kirim Bukti";
+        }
+    };
+    reader.readAsDataURL(file);
+}
+
+function listenReview() {
+    console.log("Test")
+    if (!isAdmin()) return;
+    console.log("Test2")
+    db.collection("reviewSchedules").onSnapshot(snap => {
+        const container = document.getElementById("reviewList");
+        container.innerHTML = "";
+        
+        snap.forEach(doc => {
+            const data = doc.data();
+            const card = document.createElement("div");
+            card.className = "bg-white p-5 rounded-xl shadow border-l-4 border-blue-500";
+            card.innerHTML = `
+                <p class="text-xs text-gray-400">Pengirim: ${data.creatorName}</p>
+                <p class="text-xs text-gray-400">ID: ${doc.id}</p>
+                <div class="my-2">
+                    <a href="${data.proofUrl}" target="_blank" class="text-blue-500 text-sm underline">👁️ Lihat Bukti Foto</a>
+                </div>
+                <div class="text-xs text-gray-600 mb-3">
+                    <p>📍 ${data.tempat}</p>
+                    <p>🕒 ${data.date}</p>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="adminAction('${doc.id}', 'approve')" class="bg-green-500 text-white px-3 py-1 rounded text-xs">Selesaikan ✅</button>
+                    <button onclick="adminAction('${doc.id}', 'reject')" class="bg-red-500 text-white px-3 py-1 rounded text-xs">Kembalikan ↩️</button>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    });
+}
+
+async function adminAction(id, action) {
+    const ref = db.collection("reviewSchedules").doc(id);
+    const snap = await ref.get();
+    const data = snap.data();
+
+    if (action === 'approve') {
+        // Pindah ke completedSchedules
+        await db.collection("completedSchedules").add({
+            ...data,
+            approvedAt: firebase.firestore.FieldValue.serverTimestamp()
+        });
+    } else {
+        // Balikin ke schedules (jadwal aktif)
+        const { proofUrl, submittedAt, status, ...originalData } = data;
+        await db.collection("schedules").doc(id).set(originalData);
+        alert("Jadwal dikembalikan ke list aktif. Jangan lupa menghapus bukti agar memudahkan admin yang lain.");
+    }
+    
+    // Hapus dari review
+    await ref.delete();
+}
+
+async function copyData(id) {
+    // Logika copy data seperti di script sebelumnya
+    const ref = id.includes('complete') ? db.collection("completedSchedules") : db.collection("schedules");
+    const doc = await db.collection("schedules").doc(id).get(); 
+    // Note: simplifikasi, asumsikan dari schedules. Jika gagal, coba completedSchedules
+    const data = doc.exists ? doc.data() : (await db.collection("completedSchedules").doc(id).get()).data();
+
+    const teks = `Sharing Efromatika\nKating: ${data.kating.join(", ")}\nWaktu: ${data.date} ${data.time}\nTempat: ${data.tempat}`;
+    navigator.clipboard.writeText(teks).then(() => alert("Disalin!"));
+}
+
+/* --- KONFIGURASI PROFIL --- */
+
+async function openProfileModal() {
+    if (!currentUser) return;
+
+    document.getElementById("profileOverlay").classList.remove("hidden");
+    
+    // 1. Tampilkan data dasar dari email & name25
+    const username = currentUser.email.split("@")[0];
+    document.getElementById("p-nama").innerText = name25[username] || username;
+    document.getElementById("p-email").innerText = currentUser.email;
+    document.getElementById("p-nim").innerText = "125160" + username.split(".")[1];
+    document.getElementById("p-angkatan").innerText = 2025;
+    // 2. Ambil data tambahan (NIM, Angkatan, Foto) dari Firestore
+    // updateProfileUI(data.photoURL);
+}
+
+function closeProfileModal() {
+    document.getElementById("profileOverlay").classList.add("hidden");
+}
+
+// Pastikan saat aplikasi load, foto profil juga terisi otomatis
+async function loadProfileOnStart(user) {
+    const userDoc = await db.collection("users").doc(user.uid).get();
+    if (userDoc.exists && userDoc.data().photoURL) {
+        updateProfileUI(userDoc.data().photoURL);
+    }
+}
+
+// Global expose agar onclick di HTML berfungsi
+window.showPage = showPage;
+window.toggleSidebar = toggleSidebar;
+window.openModal = openModal;
+window.closeModal = closeModal;
+window.removeKating = removeKating;
+window.joinSharing = joinSharing;
+window.batalJoin = batalJoin;
+window.deleteSharing = deleteSharing;
+window.completeSharing = completeSharing;
+window.copyData = copyData;
