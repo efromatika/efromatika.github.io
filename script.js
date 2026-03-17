@@ -89,7 +89,7 @@ function isAdmin() {
     const username = currentUser.email.split("@")[0];
     return adminList.includes(username);
 }
-const linkApps = "https:
+const linkApps = "https://script.google.com/macros/s/AKfycbxDNN9SVgWpCd0Vlne9kEdf5dBedwPTlSazO1GKsCBjTI9rsNUwRabUW3zXhO1Dd2FC/exec"
 const db = firebase.firestore();
 let currentUser = null;
 let inactivityTimer = null;
