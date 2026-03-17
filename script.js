@@ -150,37 +150,6 @@ function resetInactivityTimer() {
         }
     }, 300000); 
 }
-async function uploadToDrive(fileInput) {
-    const file = fileInput.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = async function(e) {
-        const base64 = e.target.result.split(',')[1];
-        const payload = {
-            base64: base64,
-            fileName: `${currentUser.email.split('@')[0]}_${file.name}`,
-            mimeType: file.type
-        };
-        try {
-            const response = await fetch(linkApps, {
-                method: "POST",
-                body: JSON.stringify(payload)
-            });
-            const result = await response.json();
-            if (result.status === "success") {
-                alert("Tugas berhasil dikirim ke Drive!");
-                db.collection("tugas").add({
-                    user: currentUser.email,
-                    fileUrl: result.url,
-                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
-                });
-            }
-        } catch (err) {
-            console.error("Upload gagal:", err);
-        }
-    };
-    reader.readAsDataURL(file);
-}
 function startActivityListeners() {
     ["mousemove", "keydown", "click", "touchstart"].forEach(e =>
         document.addEventListener(e, resetInactivityTimer)
